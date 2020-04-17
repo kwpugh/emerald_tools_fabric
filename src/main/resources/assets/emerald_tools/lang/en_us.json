@@ -1,0 +1,39 @@
+{
+  "item.emerald_tools.emerald_sword": "Emerald Sword",
+  "item.emerald_tools.emerald_pickaxe": "Emerald Pickaxe",
+  "item.emerald_tools.emerald_shovel": "Emerald Shovel",
+  "item.emerald_tools.emerald_hoe": "Emerald Hoe",
+  "item.emerald_tools.emerald_axe": "Emerald Axe",
+  
+  "item.emerald_tools.emerald_helmet": "Emerald Helmet",
+  "item.emerald_tools.emerald_chestplate": "Emerald Chestplate",
+  "item.emerald_tools.emerald_leggings": "Emerald Leggings",
+  "item.emerald_tools.emerald_boots": "Emerald Boots",
+  
+  "item.emerald_tools.ruby": "Ruby",
+  
+  "item.emerald_tools.ruby_sword": "Ruby Sword",
+  "item.emerald_tools.ruby_pickaxe": "Ruby Pickaxe",
+  "item.emerald_tools.ruby_axe": "Ruby Axe",
+  "item.emerald_tools.ruby_shovel": "Ruby Shovel",
+  "item.emerald_tools.ruby_hoe": "Ruby Hoe",
+
+  "item.emerald_tools.ruby_helmet": "Ruby Helmet",
+  "item.emerald_tools.ruby_chestplate": "Ruby Chestplate",
+  "item.emerald_tools.ruby_leggings": "Ruby Leggings",
+  "item.emerald_tools.ruby_boots": "Ruby Boots",
+  
+  "item.emerald_tools.steel_ingot": "Steel Ingot",
+  "item.emerald_tools.steel_sword": "Steel Sword",
+  "item.emerald_tools.steel_pickaxe": "Steel Pickaxe",
+  "item.emerald_tools.steel_axe": "Steel Axe",
+  "item.emerald_tools.steel_shovel": "Steel Shovel",
+  "item.emerald_tools.steel_hoe": "Steel Hoe",
+ 
+  "item.emerald_tools.steel_helmet": "Steel Helmet",
+  "item.emerald_tools.steel_chestplate": "Steel Chestplate",
+  "item.emerald_tools.steel_leggings": "Steel Leggings",
+  "item.emerald_tools.steel_boots": "Steel Boots",
+     
+  "itemGroup.emerald_tools.emerald_tools_group" : "Emerald Tools & More"
+}

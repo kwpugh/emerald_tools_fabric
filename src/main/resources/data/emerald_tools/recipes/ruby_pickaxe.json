@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "r": {
+      "item": "emerald_tools:ruby"
+    }
+  },
+  "result": {
+    "item": "emerald_tools:ruby_pickaxe"
+  }
+}

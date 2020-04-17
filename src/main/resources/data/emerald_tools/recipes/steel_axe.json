@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ee ",
+    "es ",
+    " s "
+  ],
+  "key": {
+    "e": {
+      "item": "emerald_tools:steel_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "emerald_tools:steel_axe"
+  }
+}

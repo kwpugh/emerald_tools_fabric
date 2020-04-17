@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "r r",
+    "rrr",
+    "rrr"
+  ],
+  "key": {
+    "e": {
+      "item": "emerald_tools:ruby"
+    }
+  },
+  "result": {
+    "item": "emerald_tools:ruby_chestplate"
+  }
+}

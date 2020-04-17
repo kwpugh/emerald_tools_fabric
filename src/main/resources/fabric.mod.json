@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "emerald_tools",
+  "version": "1.0.3",
+
+  "name": "Emerald Tools",
+  "description": "My first shot at Fabric modding",
+  "authors": [
+    "Kevin Pugh"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/emerald_tools/emerald_sword.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.kwpugh.emerald_tools.EmeraldTools"
+    ]
+  },
+  "mixins": [
+    "emerald_tools.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

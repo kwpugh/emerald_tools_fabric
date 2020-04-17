@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "e e",
+    "eee",
+    "eee"
+  ],
+  "key": {
+    "e": {
+      "item": "emerald_tools:steel_ingot",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "emerald_tools:steel_chestplate"
+  }
+}
