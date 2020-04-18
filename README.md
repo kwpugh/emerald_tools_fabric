@@ -1,4 +1,10 @@
-# Fabric Example Mod
+# Simple Emerald Tools & More - A Fabric Mod
+
+## Contents
+
+- Adds armor, tools, and weapons for Emerald, Ruby, ad Steel
+- Adds a method to create Ruby from Emerald and redstone dust
+- Addes a method to create Steel from Charcoal and Iron Ingot
 
 ## Setup
 
