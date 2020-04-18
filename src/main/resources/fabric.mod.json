@@ -4,7 +4,7 @@
   "version": "1.0.6",
 
   "name": "Emerald Tools",
-  "description": "My first shot at Fabric modding",
+  "description": "A vanilla-friendly mod that adds Emerald, Ruby, and Steel gear, no new ores",
   "authors": [
     "Kevin Pugh"
   ],
