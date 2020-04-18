@@ -2,7 +2,7 @@ package com.kwpugh.emerald_tools.materials;
 
 import java.util.function.Supplier;
 
-import com.kwpugh.emerald_tools.init.ModItems;
+import com.kwpugh.emerald_tools.init.ContentInit;
 
 import net.minecraft.item.Items;
 import net.fabricmc.api.EnvType;
@@ -17,7 +17,7 @@ import net.minecraft.util.Lazy;
 public enum ModArmorMaterials implements ArmorMaterial
 {
 	STEEL("steel", 21, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.5F, () -> {
-		return Ingredient.ofItems(ModItems.STEEL_INGOT);
+		return Ingredient.ofItems(ContentInit.STEEL_INGOT);
 		}),
 	   
 	EMERALD("emerald_", 26, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
@@ -25,7 +25,7 @@ public enum ModArmorMaterials implements ArmorMaterial
 		}),
 	
 	RUBY("ruby_", 29, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
-	    return Ingredient.ofItems(ModItems.RUBY);
+	    return Ingredient.ofItems(ContentInit.RUBY);
 		});
 
    private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

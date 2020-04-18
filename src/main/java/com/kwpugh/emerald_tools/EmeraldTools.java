@@ -1,7 +1,6 @@
 package com.kwpugh.emerald_tools;
 
-import com.kwpugh.emerald_tools.init.ModBlocks;
-import com.kwpugh.emerald_tools.init.ModItems;
+import com.kwpugh.emerald_tools.init.ContentInit;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -13,12 +12,11 @@ public class EmeraldTools implements ModInitializer
 {
     public static final String MOD_ID = "emerald_tools";
 
-    public static final ItemGroup EMERALD_TOOLS_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "emerald_tools_group"), () -> new ItemStack(ModItems.EMERALD_SWORD));
+    public static final ItemGroup EMERALD_TOOLS_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "emerald_tools_group"), () -> new ItemStack(ContentInit.EMERALD_SWORD));
 	
     @Override
     public void onInitialize()
     {
-    	ModBlocks.init();
-        new ModItems();
+        new ContentInit();
     }
 }

@@ -15,7 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ModItems
+public class ContentInit
 {
 	public static final Item EMERALD_SWORD = registerItem((String)"emerald_sword", (Item)(new ModSword(ModToolMaterials.EMERALD, 3, -2.4F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP))));
 	public static final Item EMERALD_PICKAXE = registerItem((String)"emerald_pickaxe", (Item)(new ModPickaxe(ModToolMaterials.EMERALD, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP))));
