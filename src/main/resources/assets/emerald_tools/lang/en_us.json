@@ -11,7 +11,10 @@
   "item.emerald_tools.emerald_boots": "Emerald Boots",
   
   "item.emerald_tools.ruby": "Ruby",
-  
+
+  "item.emerald_tools.ruby_block": "Ruby Block",
+  "block.emerald_tools.ruby_block": "Ruby Block",
+    
   "item.emerald_tools.ruby_sword": "Ruby Sword",
   "item.emerald_tools.ruby_pickaxe": "Ruby Pickaxe",
   "item.emerald_tools.ruby_axe": "Ruby Axe",
@@ -24,6 +27,10 @@
   "item.emerald_tools.ruby_boots": "Ruby Boots",
   
   "item.emerald_tools.steel_ingot": "Steel Ingot",
+  
+  "item.emerald_tools.steel_block": "Steel Block",
+  "block.emerald_tools.steel_block": "Steel Block",
+  
   "item.emerald_tools.steel_sword": "Steel Sword",
   "item.emerald_tools.steel_pickaxe": "Steel Pickaxe",
   "item.emerald_tools.steel_axe": "Steel Axe",

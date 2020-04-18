@@ -1,6 +1,6 @@
 package com.kwpugh.emerald_tools.items;
 
-import com.kwpugh.emerald_tools.init.ModInit;
+import com.kwpugh.emerald_tools.init.ModItems;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
@@ -26,10 +26,10 @@ public class ModArmor extends ArmorItem
 		    ItemStack feet = player.getEquippedStack(EquipmentSlot.FEET);
 		    
 		    //Full Set
-	    	if(		head.getItem() == ModInit.EMERALD_HELMET && 
-	    			chest.getItem() == ModInit.EMERALD_CHESTPLATE && 
-	    			legs.getItem() == ModInit.EMERALD_LEGGINGS && 
-	    			feet.getItem() == ModInit.EMERALD_BOOTS)
+	    	if(		head.getItem() == ModItems.EMERALD_HELMET && 
+	    			chest.getItem() == ModItems.EMERALD_CHESTPLATE && 
+	    			legs.getItem() == ModItems.EMERALD_LEGGINGS && 
+	    			feet.getItem() == ModItems.EMERALD_BOOTS)
 	    	{
 				player.setAir(300);
 	    	}

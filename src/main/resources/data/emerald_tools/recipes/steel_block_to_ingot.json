@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"   ",
+		" B ",
+		"   "
+	],
+	
+	"key":
+	{
+		"B": { "item": "emerald_tools:steel_block" }	
+	},
+	
+	"result": { "item": "emerald_tools:steel_ingot",
+	"count": 9 }
+}
