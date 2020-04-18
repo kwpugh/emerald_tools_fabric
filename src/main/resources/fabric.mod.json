@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "emerald_tools",
-  "version": "1.0.3",
+  "version": "1.0.5",
 
   "name": "Emerald Tools",
   "description": "My first shot at Fabric modding",
@@ -9,12 +9,12 @@
     "Kevin Pugh"
   ],
   "contact": {
-    "homepage": "",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/simple-emerald-tools-fabric",
     "sources": ""
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/emerald_tools/emerald_sword.png",
+  "icon": "assets/emerald_tools/textures/item/emerald_sword.png",
 
   "environment": "*",
   "entrypoints": {
