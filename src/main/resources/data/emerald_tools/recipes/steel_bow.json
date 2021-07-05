@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "addition": {
+    "tag": "c:steel_ingots"
+  },
+  "result": {
+    "item": "emerald_tools:steel_bow"
+  }
+}

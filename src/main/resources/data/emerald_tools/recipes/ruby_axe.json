@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rr ",
+    "rs ",
+    " s "
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "r": {
+      "tag": "c:rubies"
+    }
+  },
+  "result": {
+    "item": "emerald_tools:ruby_axe"
+  }
+}

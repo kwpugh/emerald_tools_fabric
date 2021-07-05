@@ -1,0 +1,53 @@
+{
+	"replace": false,
+	"values": [
+		{
+			"id": "emerald_tools:emerald_pickaxe",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:obsidian_pickaxe",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:ruby_pickaxe",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:steel_pickaxe",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:emerald_paxel",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:obsidian_paxel",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:ruby_paxel",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:steel_paxel",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:emerald_hammer",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:obsidian_hammer",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:ruby_hammer",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:steel_hammer",
+			"required": false
+		}
+	]
+}

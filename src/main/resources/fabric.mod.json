@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "emerald_tools",
+  "version": "${version}",
+
+  "name": "Emerald Tools",
+  "description": "A vanilla-friendly mod that adds Emerald, Ruby, and Steel gear, no new ores",
+  "authors": [
+    "Kevin Pugh"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/simple-emerald-tools-fabric",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/emerald_tools/textures/item/emerald_sword.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.kwpugh.emerald_tools.EmeraldTools"
+    ],
+    "client": [
+      "com.kwpugh.emerald_tools.EmeraldToolsClient"
+    ]
+  },
+  "mixins": [
+    "emerald_tools.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "java": ">=16",
+    "minecraft": "1.17.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

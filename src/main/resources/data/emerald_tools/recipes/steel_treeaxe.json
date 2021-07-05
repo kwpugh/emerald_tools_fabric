@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "eb ",
+    "es ",
+    " s "
+  ],
+  "key": {
+    "e": {
+      "tag": "c:steel_ingots"
+    },
+    "b": {
+      "item": "emerald_tools:steel_block"
+    },
+    "s": {
+      "item": "minecraft:stick",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "emerald_tools:steel_treeaxe"
+  }
+}

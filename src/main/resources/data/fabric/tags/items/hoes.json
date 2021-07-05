@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+"emerald_tools:emerald_hoe",
+"emerald_tools:obsidian_hoe",
+"emerald_tools:ruby_hoe",
+"emerald_tools:steel_hoe"
+  ]
+}

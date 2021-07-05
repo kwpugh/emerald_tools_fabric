@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "abc",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "a": {
+      "item": "emerald_tools:obsidian_axe"
+    },
+    "b": {
+      "item": "emerald_tools:obsidian_shovel"
+    },
+    "c": {
+      "item": "emerald_tools:obsidian_pickaxe"
+    }
+  },
+  "result": {
+    "item": "emerald_tools:obsidian_paxel"
+  }
+}

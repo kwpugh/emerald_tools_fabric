@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "emerald_tools:item/copper_hoe"
+  }
+}

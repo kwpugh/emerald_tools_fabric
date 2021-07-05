@@ -1,0 +1,6 @@
+{
+    "parent": "emerald_tools:item/obsidian_bow",
+    "textures": {
+        "layer0": "emerald_tools:item/obsidian_bow_pulling_2"
+    }
+}

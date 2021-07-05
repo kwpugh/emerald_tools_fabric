@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "r r",
+    "r r"
+  ],
+  "key": {
+    "r": {
+      "tag": "c:rubies"
+    }
+  },
+  "result": {
+    "item": "emerald_tools:ruby_boots"
+  }
+}

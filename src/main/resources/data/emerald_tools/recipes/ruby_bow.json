@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "addition": {
+    "tag": "c:rubies"
+  },
+  "result": {
+    "item": "emerald_tools:ruby_bow"
+  }
+}

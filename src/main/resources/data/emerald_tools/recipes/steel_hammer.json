@@ -1,0 +1,19 @@
+ {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "eee",
+    "ese",
+    " s "
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "e": {
+    "tag": "c:steel_ingots"
+    }
+  },
+  "result": {
+    "item": "emerald_tools:steel_hammer"
+  }
+}

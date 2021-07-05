@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+"emerald_tools:emerald_shovel",
+"emerald_tools:obsidian_shovel",
+"emerald_tools:ruby_shovel",
+"emerald_tools:steel_shovel",
+"emerald_tools:emerald_excavator",
+"emerald_tools:obsidian_excavator",
+"emerald_tools:ruby_excavator",
+"emerald_tools:steel_excavator"
+  ]
+}
