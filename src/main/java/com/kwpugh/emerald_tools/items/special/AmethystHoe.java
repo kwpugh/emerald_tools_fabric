@@ -22,7 +22,7 @@ public class AmethystHoe extends ModHoe
     {
         if(enable)
         {
-            stack.getOrCreateTag().putBoolean("Unbreakable", true);
+            stack.getOrCreateNbt().putBoolean("Unbreakable", true);
         }
     }
 }
