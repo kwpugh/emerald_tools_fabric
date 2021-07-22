@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "emerald_tools:copper_shears"
+    {
+      "id":  "emerald_tools:copper_shears",
+      "required": false
+    }
   ]
 }

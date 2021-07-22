@@ -1,9 +1,21 @@
 {
   "replace": false,
   "values": [
-"emerald_tools:emerald_hoe",
-"emerald_tools:obsidian_hoe",
-"emerald_tools:ruby_hoe",
-"emerald_tools:steel_hoe"
+    {
+      "id": "emerald_tools:emerald_hoe",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:obsidian_hoe",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:ruby_hoe",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:steel_hoe",
+      "required": false
+    }
   ]
 }

@@ -1,9 +1,21 @@
 {
   "replace": false,
   "values": [
-"emerald_tools:emerald_sword",
-"emerald_tools:obsidian_sword",
-"emerald_tools:ruby_sword",
-"emerald_tools:steel_sword"
+    {
+      "id": "emerald_tools:emerald_sword",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:obsidian_sword",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:ruby_sword",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:steel_sword",
+      "required": false
+    }
   ]
 }

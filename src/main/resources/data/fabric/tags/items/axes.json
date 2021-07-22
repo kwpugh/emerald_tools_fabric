@@ -1,9 +1,21 @@
 {
   "replace": false,
   "values": [
-"emerald_tools:emerald_axe",
-"emerald_tools:obsidian_axe",
-"emerald_tools:ruby_axe",
-"emerald_tools:steel_axe"
+    {
+      "id": "emerald_tools:emerald_axe",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:obsidian_axe",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:ruby_axe",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:steel_axe",
+      "required": false
+    }
   ]
 }
