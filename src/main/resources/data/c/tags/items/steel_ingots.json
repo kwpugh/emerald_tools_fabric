@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "emerald_tools:steel_ingot"
+    {
+      "id": "emerald_tools:steel_ingot",
+      "required": false
+    }
   ]
 }

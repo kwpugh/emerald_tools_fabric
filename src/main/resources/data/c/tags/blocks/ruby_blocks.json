@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "emerald_tools:ruby_block"
+    {
+      "id": "emerald_tools:ruby_block",
+      "required": false
+    }
   ]
 }
