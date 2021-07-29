@@ -18,6 +18,14 @@
       "required": false
     },
     {
+      "id": "emerald_tools:copper_shovel",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:amethyst_shovel",
+      "required": false
+    },
+    {
       "id": "emerald_tools:emerald_excavator",
       "required": false
     },
@@ -31,6 +39,14 @@
     },
     {
       "id": "emerald_tools:steel_excavator",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:copper_excavator",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:amethyst_excavator",
       "required": false
     }
   ]

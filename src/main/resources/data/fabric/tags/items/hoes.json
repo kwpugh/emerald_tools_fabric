@@ -16,6 +16,14 @@
     {
       "id": "emerald_tools:steel_hoe",
       "required": false
+    },
+    {
+      "id": "emerald_tools:copper_hoe",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:amethyst_hoe",
+      "required": false
     }
   ]
 }

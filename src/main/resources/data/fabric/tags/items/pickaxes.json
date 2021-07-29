@@ -18,6 +18,14 @@
 			"required": false
 		},
 		{
+			"id": "emerald_tools:copper_pickaxe",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:amethyst_pickaxe",
+			"required": false
+		},
+		{
 			"id": "emerald_tools:emerald_paxel",
 			"required": false
 		},
@@ -34,6 +42,14 @@
 			"required": false
 		},
 		{
+			"id": "emerald_tools:copper_paxel",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:amethyst_paxel",
+			"required": false
+		},
+		{
 			"id": "emerald_tools:emerald_hammer",
 			"required": false
 		},
@@ -47,6 +63,14 @@
 		},
 		{
 			"id": "emerald_tools:steel_hammer",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:copper_paxel",
+			"required": false
+		},
+		{
+			"id": "emerald_tools:amethyst_paxel",
 			"required": false
 		}
 	]

@@ -16,6 +16,14 @@
     {
       "id": "emerald_tools:steel_sword",
       "required": false
+    },
+    {
+      "id": "emerald_tools:copper_sword",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:amethyst_sword",
+      "required": false
     }
   ]
 }

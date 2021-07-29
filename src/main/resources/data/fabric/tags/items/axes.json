@@ -16,6 +16,14 @@
     {
       "id": "emerald_tools:steel_axe",
       "required": false
+    },
+    {
+      "id": "emerald_tools:copper_axe",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:amethyst_axe",
+      "required": false
     }
   ]
 }
