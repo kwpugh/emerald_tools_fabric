@@ -1,7 +1,6 @@
-package com.kwpugh.emerald_tools.items;
+package com.kwpugh.emerald_tools.items.areatools;
 
-import com.kwpugh.pugh_tools.Tools.Paxel;
-
+import com.kwpugh.pugh_tools.Tools.Hammer;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -13,9 +12,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class NewPaxel extends Paxel
+public class ModHammer extends Hammer
 {
-    public NewPaxel(ToolMaterial material, float attackDamage, float attackSpeed, Item.Settings settings)
+    public ModHammer(ToolMaterial material, int attackDamage, float attackSpeed, Item.Settings settings)
     {
         super(material, attackDamage, attackSpeed, settings);
     }
@@ -23,6 +22,6 @@ public class NewPaxel extends Paxel
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
     {
-        tooltip.add(new TranslatableText("item.emerald_tools.paxel.tip1").formatted(Formatting.GREEN));
+        tooltip.add(new TranslatableText("item.emerald_tools.hammer.tip1").formatted(Formatting.GREEN));
     }
 }

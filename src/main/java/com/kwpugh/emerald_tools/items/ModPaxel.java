@@ -1,8 +1,9 @@
-package com.kwpugh.emerald_tools.items.areatools;
+package com.kwpugh.emerald_tools.items;
 
-import com.kwpugh.pugh_tools.Tools.TreeAxe;
+import com.kwpugh.pugh_tools.Tools.Paxel;
 
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.text.Text;
@@ -12,9 +13,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class NewTreeAxe extends TreeAxe
+public class ModPaxel extends Paxel
 {
-    public NewTreeAxe(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings)
+    public ModPaxel(ToolMaterial material, float attackDamage, float attackSpeed, Item.Settings settings)
     {
         super(material, attackDamage, attackSpeed, settings);
     }
@@ -22,6 +23,6 @@ public class NewTreeAxe extends TreeAxe
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
     {
-        tooltip.add(new TranslatableText("item.emerald_tools.treeaxe.tip1").formatted(Formatting.GREEN));
+        tooltip.add(new TranslatableText("item.emerald_tools.paxel.tip1").formatted(Formatting.GREEN));
     }
 }
