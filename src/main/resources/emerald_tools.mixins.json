@@ -5,7 +5,9 @@
   "compatibilityLevel": "JAVA_16",
   "mixins": [
     "ItemPredicateMixin",
-    "SheepEntityMixin"
+    "SheepEntityMixin",
+    "AnvilScreenHandlerMixin",
+    "ForgingScreenHandlerAccessor"
   ],
   "client": [
   ],

@@ -124,6 +124,7 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
        	public float rubyAttackDamage = 3.0F;
        	public int rubyMiningLevel = 3;
        	public int rubyEnchantability = 10;
+       	public boolean rubySpecial = true;
 
        	@Comment("\n"
     			+"\n"
