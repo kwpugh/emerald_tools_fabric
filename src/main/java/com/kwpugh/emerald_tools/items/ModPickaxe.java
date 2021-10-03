@@ -1,7 +1,5 @@
 package com.kwpugh.emerald_tools.items;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 

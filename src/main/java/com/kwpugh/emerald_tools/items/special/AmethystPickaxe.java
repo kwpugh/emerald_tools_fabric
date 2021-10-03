@@ -5,7 +5,6 @@ import com.kwpugh.emerald_tools.items.ModPickaxe;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.world.World;
 
