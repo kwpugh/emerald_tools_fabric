@@ -1,12 +1,9 @@
 package com.kwpugh.emerald_tools.init;
 
 import com.kwpugh.emerald_tools.EmeraldTools;
-
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
-
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -17,8 +14,8 @@ public class BlockInit
 	static boolean enableRuby = EmeraldTools.CONFIG.GENERAL.enableRubySet;
 	static boolean enableSteel = EmeraldTools.CONFIG.GENERAL.enableSteelSet;
 
-	public static final Block RUBY_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(2.0F, 2.0F));
-	public static final Block STEEL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(2.0F, 2.0F));
+	public static final Block RUBY_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0F, 2.0F));
+	public static final Block STEEL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0F, 2.0F));
 	
 	public static void registerBlocks()
 	{
