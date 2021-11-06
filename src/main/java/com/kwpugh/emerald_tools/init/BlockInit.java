@@ -17,8 +17,8 @@ public class BlockInit
 	static boolean enableRuby = EmeraldTools.CONFIG.GENERAL.enableRubySet;
 	static boolean enableSteel = EmeraldTools.CONFIG.GENERAL.enableSteelSet;
 
-	public static final Block RUBY_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(2.0F, 2.0F));
-	public static final Block STEEL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(2.0F, 2.0F));
+	public static final Block RUBY_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0F, 2.0F));
+	public static final Block STEEL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0F, 2.0F));
 	
 	public static void registerBlocks()
 	{
