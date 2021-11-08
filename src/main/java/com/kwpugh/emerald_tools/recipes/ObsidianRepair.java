@@ -1,17 +1,20 @@
-package com.kwpugh.emerald_tools.util;
+package com.kwpugh.emerald_tools.recipes;
 
 import com.kwpugh.emerald_tools.init.ItemInit;
 import com.kwpugh.emerald_tools.init.RecipeInit;
 import net.minecraft.inventory.CraftingInventory;
-import net.minecraft.item.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.item.ToolItem;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
-public class CopperRepair extends SpecialCraftingRecipe
+public class ObsidianRepair extends SpecialCraftingRecipe
 {
-    public CopperRepair(Identifier identifier)
+    public ObsidianRepair(Identifier identifier)
     {
         super(identifier);
     }
@@ -36,7 +39,7 @@ public class CopperRepair extends SpecialCraftingRecipe
 
             int damageRepair = 10;
 
-            if (materialItem == Items.COPPER_INGOT || materialItem == Items.RAW_COPPER)
+            if (materialItem == Items.OBSIDIAN || materialItem == Items.CRYING_OBSIDIAN)
             {
                 damageRepair = 30;
             }
@@ -62,7 +65,7 @@ public class CopperRepair extends SpecialCraftingRecipe
     @Override
     public RecipeSerializer<?> getSerializer()
     {
-        return RecipeInit.COPPER_REPAIR;
+        return RecipeInit.OBSIDIAN_REPAIR;
     }
 
     protected MatchResult matchResult(CraftingInventory inventory)
@@ -78,7 +81,7 @@ public class CopperRepair extends SpecialCraftingRecipe
             {
                 Item item = stack.getItem();
 
-                if(item instanceof ToolItem && ((ToolItem) item).getMaterial() == ItemInit.COPPER_TOOL_MATERIAL)
+                if(item instanceof ToolItem && ((ToolItem) item).getMaterial() == ItemInit.OBSIDIAN_TOOL_MATERIAL)
                 {
                     if(!toolStack.isEmpty())
                     {
@@ -88,7 +91,7 @@ public class CopperRepair extends SpecialCraftingRecipe
                     toolStack = stack;
                     continue;
                 }
-                else if(item == Items.COPPER_INGOT || item == Items.RAW_COPPER)
+                else if(item == Items.OBSIDIAN || item == Items.CRYING_OBSIDIAN)
                 {
                     if (!materialStack.isEmpty())
                     {
@@ -122,7 +125,7 @@ public class CopperRepair extends SpecialCraftingRecipe
 
         public boolean matches()
         {
-            return this == EMPTY || !toolStack.isEmpty() && !materialStack.isEmpty();
+            return !toolStack.isEmpty() && !materialStack.isEmpty();
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.kwpugh.emerald_tools.util;
+package com.kwpugh.emerald_tools.recipes;
 
 import com.kwpugh.emerald_tools.init.ItemInit;
 import com.kwpugh.emerald_tools.init.RecipeInit;
@@ -125,7 +125,7 @@ public class AmethystRepair extends SpecialCraftingRecipe
 
         public boolean matches()
         {
-            return this == EMPTY || !toolStack.isEmpty() && !materialStack.isEmpty();
+            return !toolStack.isEmpty() && !materialStack.isEmpty();
         }
     }
 }
