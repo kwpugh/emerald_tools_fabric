@@ -7,7 +7,6 @@ import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.*;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
-import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
@@ -51,11 +50,11 @@ public class ToolRepair extends SpecialCraftingRecipe
         return width * height >= 2;
     }
 
-    // Not used but required to exist
+
     @Override
     public RecipeSerializer<?> getSerializer()
     {
-        return RecipeInit.AMETHYST_REPAIR;
+        return RecipeInit.TOOL_REPAIR;
     }
 
     protected MatchResult matchResult(CraftingInventory inventory)
