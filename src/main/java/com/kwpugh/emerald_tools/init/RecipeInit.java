@@ -8,15 +8,21 @@ import net.minecraft.util.registry.Registry;
 
 public class RecipeInit
 {
-    public static SpecialRecipeSerializer<CopperRepair> COPPER_REPAIR = new SpecialRecipeSerializer<>(CopperRepair::new);
-    public static SpecialRecipeSerializer<AmethystRepair> AMETHYST_REPAIR = new SpecialRecipeSerializer<>(AmethystRepair::new);
-    public static SpecialRecipeSerializer<EmeraldRepair> EMERALD_REPAIR = new SpecialRecipeSerializer<>(EmeraldRepair::new);
-    public static SpecialRecipeSerializer<RubyRepair> RUBY_REPAIR = new SpecialRecipeSerializer<>(RubyRepair::new);
-    public static SpecialRecipeSerializer<ObsidianRepair> OBSIDIAN_REPAIR = new SpecialRecipeSerializer<>(ObsidianRepair::new);
-    public static SpecialRecipeSerializer<SteelRepair> STEEL_REPAIR = new SpecialRecipeSerializer<>(SteelRepair::new);
+    public static SpecialRecipeSerializer<ToolRepair> STONE_REPAIR = new SpecialRecipeSerializer<>(ToolRepair::new);
+    public static SpecialRecipeSerializer<ToolRepair> GOLD_REPAIR = new SpecialRecipeSerializer<>(ToolRepair::new);
+    public static SpecialRecipeSerializer<ToolRepair> IRON_REPAIR = new SpecialRecipeSerializer<>(ToolRepair::new);
+    public static SpecialRecipeSerializer<ToolRepair> COPPER_REPAIR = new SpecialRecipeSerializer<>(ToolRepair::new);
+    public static SpecialRecipeSerializer<ToolRepair> AMETHYST_REPAIR = new SpecialRecipeSerializer<>(ToolRepair::new);
+    public static SpecialRecipeSerializer<ToolRepair> EMERALD_REPAIR = new SpecialRecipeSerializer<>(ToolRepair::new);
+    public static SpecialRecipeSerializer<ToolRepair> RUBY_REPAIR = new SpecialRecipeSerializer<>(ToolRepair::new);
+    public static SpecialRecipeSerializer<ToolRepair> OBSIDIAN_REPAIR = new SpecialRecipeSerializer<>(ToolRepair::new);
+    public static SpecialRecipeSerializer<ToolRepair> STEEL_REPAIR = new SpecialRecipeSerializer<>(ToolRepair::new);
 
     public static void registerRecipes()
     {
+        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(EmeraldTools.MOD_ID, "stone_repair"), STONE_REPAIR);
+        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(EmeraldTools.MOD_ID, "gold_repair"), GOLD_REPAIR);
+        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(EmeraldTools.MOD_ID, "iron_repair"), IRON_REPAIR);
         Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(EmeraldTools.MOD_ID, "copper_repair"), COPPER_REPAIR);
         Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(EmeraldTools.MOD_ID, "amethyst_repair"), AMETHYST_REPAIR);
         Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(EmeraldTools.MOD_ID, "emerald_repair"), EMERALD_REPAIR);
