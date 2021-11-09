@@ -72,7 +72,7 @@ public class ToolRepair extends SpecialCraftingRecipe
 
                 if(itemToTest instanceof ToolItem toolItem)
                 {
-                    selectRepairValues(toolItem);
+                    setRepairValues(toolItem);
 
                     if(!toolStack.isEmpty())
                     {
@@ -100,49 +100,49 @@ public class ToolRepair extends SpecialCraftingRecipe
         return new MatchResult(toolStack, materialStack);
     }
 
-    private void selectRepairValues(ToolItem toolItem)
+    private void setRepairValues(ToolItem toolItem)
     {
         if(toolItem.getMaterial() == ToolMaterials.STONE)
         {
             repairItem = Items.COBBLESTONE;
             damageAmount = EmeraldTools.CONFIG.GENERAL.stoneRepairAmount;
         }
-        if(toolItem.getMaterial() == ToolMaterials.GOLD)
+        else if(toolItem.getMaterial() == ToolMaterials.GOLD)
         {
             repairItem = Items.RAW_GOLD;
             damageAmount = EmeraldTools.CONFIG.GENERAL.goldRepairAmount;
         }
-        if(toolItem.getMaterial() == ToolMaterials.IRON)
+        else if(toolItem.getMaterial() == ToolMaterials.IRON)
         {
             repairItem = Items.RAW_IRON;
             damageAmount = EmeraldTools.CONFIG.GENERAL.ironRepairAmount;
         }
-        if(toolItem.getMaterial() == ItemInit.COPPER_TOOL_MATERIAL)
+        else if(toolItem.getMaterial() == ItemInit.COPPER_TOOL_MATERIAL)
         {
             repairItem = Items.RAW_COPPER;
             damageAmount = EmeraldTools.CONFIG.GENERAL.copperRepairAmount;
         }
-        if(toolItem.getMaterial() == ItemInit.STEEL_TOOL_MATERIAL)
+        else if(toolItem.getMaterial() == ItemInit.STEEL_TOOL_MATERIAL)
         {
             repairItem = ItemInit.STEEL_INGOT;
             damageAmount = EmeraldTools.CONFIG.GENERAL.steelRepairAmount;
         }
-        if(toolItem.getMaterial() == ItemInit.OBSIDIAN_TOOL_MATERIAL)
+        else if(toolItem.getMaterial() == ItemInit.OBSIDIAN_TOOL_MATERIAL)
         {
             repairItem = Items.OBSIDIAN;
             damageAmount = EmeraldTools.CONFIG.GENERAL.obsidianRepairAmount;
         }
-        if(toolItem.getMaterial() == ItemInit.EMERALD_TOOL_MATERIAL)
+        else if(toolItem.getMaterial() == ItemInit.EMERALD_TOOL_MATERIAL)
         {
             repairItem = Items.EMERALD;
             damageAmount = EmeraldTools.CONFIG.GENERAL.emeraldRepairAmount;
         }
-        if(toolItem.getMaterial() == ItemInit.AMETHYST_TOOL_MATERIAL)
+        else if(toolItem.getMaterial() == ItemInit.AMETHYST_TOOL_MATERIAL)
         {
             repairItem = Items.AMETHYST_SHARD;
             damageAmount = EmeraldTools.CONFIG.GENERAL.amethystRepairAmount;
         }
-        if(toolItem.getMaterial() == ItemInit.RUBY_TOOL_MATERIAL)
+        else if(toolItem.getMaterial() == ItemInit.RUBY_TOOL_MATERIAL)
         {
             repairItem = ItemInit.RUBY;
             damageAmount = EmeraldTools.CONFIG.GENERAL.rubyRepairAmount;
