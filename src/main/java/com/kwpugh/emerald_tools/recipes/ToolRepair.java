@@ -3,10 +3,12 @@ package com.kwpugh.emerald_tools.recipes;
 import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.emerald_tools.init.ItemInit;
 import com.kwpugh.emerald_tools.init.RecipeInit;
+import net.minecraft.block.Block;
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.*;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
@@ -92,6 +94,26 @@ public class ToolRepair extends SpecialCraftingRecipe
                     materialStack = stackToTest;
                     continue;
                 }
+                else if(BlockTags.PLANKS.contains(Block.getBlockFromItem(itemToTest)))
+                {
+                    if(!materialStack.isEmpty())
+                    {
+                        return MatchResult.EMPTY;
+                    }
+
+                    materialStack = stackToTest;
+                    continue;
+                }
+                else if(BlockTags.BASE_STONE_OVERWORLD.contains(Block.getBlockFromItem(itemToTest)))
+                {
+                    if(!materialStack.isEmpty())
+                    {
+                        return MatchResult.EMPTY;
+                    }
+
+                    materialStack = stackToTest;
+                    continue;
+                }
 
                 return MatchResult.EMPTY;
             }
@@ -102,9 +124,12 @@ public class ToolRepair extends SpecialCraftingRecipe
 
     private void setRepairValues(ToolItem toolItem)
     {
+        if(toolItem.getMaterial() == ToolMaterials.WOOD)
+        {
+            damageAmount = EmeraldTools.CONFIG.GENERAL.woodenRepairAmount;
+        }
         if(toolItem.getMaterial() == ToolMaterials.STONE)
         {
-            repairItem = Items.COBBLESTONE;
             damageAmount = EmeraldTools.CONFIG.GENERAL.stoneRepairAmount;
         }
         else if(toolItem.getMaterial() == ToolMaterials.GOLD)
