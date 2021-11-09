@@ -57,7 +57,7 @@ public class ToolRepair extends SpecialCraftingRecipe
         return RecipeInit.TOOL_REPAIR;
     }
 
-    protected MatchResult matchResult(CraftingInventory inventory)
+    private MatchResult matchResult(CraftingInventory inventory)
     {
         ItemStack toolStack = ItemStack.EMPTY;
         ItemStack materialStack = ItemStack.EMPTY;
@@ -100,7 +100,7 @@ public class ToolRepair extends SpecialCraftingRecipe
         return new MatchResult(toolStack, materialStack);
     }
 
-    public void selectRepairValues(ToolItem toolItem)
+    private void selectRepairValues(ToolItem toolItem)
     {
         if(toolItem.getMaterial() == ToolMaterials.STONE)
         {
@@ -151,14 +151,14 @@ public class ToolRepair extends SpecialCraftingRecipe
 
     private record MatchResult(ItemStack toolStack, ItemStack materialStack)
     {
-        public static final MatchResult EMPTY = new MatchResult(ItemStack.EMPTY, ItemStack.EMPTY);
+        private static final MatchResult EMPTY = new MatchResult(ItemStack.EMPTY, ItemStack.EMPTY);
 
-        public ItemStack getToolStack()
+        private ItemStack getToolStack()
         {
             return toolStack;
         }
 
-        public boolean matches()
+        private boolean matches()
         {
             return !toolStack.isEmpty() && !materialStack.isEmpty();
         }
