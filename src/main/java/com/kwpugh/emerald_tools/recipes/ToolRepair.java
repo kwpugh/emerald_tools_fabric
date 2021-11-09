@@ -31,16 +31,19 @@ public class ToolRepair extends SpecialCraftingRecipe
     @Override
     public ItemStack craft(CraftingInventory inventory)
     {
-        MatchResult matchResult = matchResult(inventory);
-
-        if (matchResult.matches())
+        if(EmeraldTools.CONFIG.GENERAL.enableGridCrafting)
         {
-            ItemStack toolStack = matchResult.getToolStack();
-            ItemStack craftStack = toolStack.copy();
-            int damage = Math.max(craftStack.getDamage() - damageAmount, 0);
-            craftStack.setDamage(damage);
+            MatchResult matchResult = matchResult(inventory);
 
-            return craftStack;
+            if (matchResult.matches())
+            {
+                ItemStack toolStack = matchResult.getToolStack();
+                ItemStack craftStack = toolStack.copy();
+                int damage = Math.max(craftStack.getDamage() - damageAmount, 0);
+                craftStack.setDamage(damage);
+
+                return craftStack;
+            }
         }
 
         return ItemStack.EMPTY;

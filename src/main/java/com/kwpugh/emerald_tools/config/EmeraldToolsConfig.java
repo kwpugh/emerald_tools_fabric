@@ -48,15 +48,16 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
 				+"\nCrafting Grid Repair"
 				+"\n- repair amount per item"
 				+"\n******************************")
+		public boolean enableGridCrafting = true;
 		public int woodenRepairAmount = 20;
 		public int stoneRepairAmount = 40;
 		public int goldRepairAmount = 32;
 		public int ironRepairAmount = 60;
-		public int copperRepairAmount = 40;
-		public int steelRepairAmount = 80;
-		public int obsidianRepairAmount = 100;
-		public int emeraldRepairAmount = 140;
-		public int amethystRepairAmount = 160;
+		public int copperRepairAmount = 60;
+		public int steelRepairAmount = 90;
+		public int obsidianRepairAmount = 130;
+		public int emeraldRepairAmount = 160;
+		public int amethystRepairAmount = 180;
 		public int rubyRepairAmount = 180;
 
        	@Comment("\n"
