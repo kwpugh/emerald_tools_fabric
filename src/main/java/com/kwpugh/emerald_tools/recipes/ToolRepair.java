@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ToolRepair extends SpecialCraftingRecipe
 {
-    private List<Item> repairItemList = new ArrayList<>();
+    private final List<Item> repairItemList = new ArrayList<>();
     private int damageAmount;
 
     public ToolRepair(Identifier identifier)
