@@ -40,9 +40,6 @@ dependencies {
 	include "com.kwpugh:pugh_tools_fabric_1.18-snapshot:1.1.8"
 	modImplementation "com.kwpugh:pugh_tools_fabric_1.18-snapshot:1.1.8"
 
-	//REI
-    //modCompile "me.shedaniel:RoughlyEnoughItems:5.4.2"
-
 }
 
 processResources {

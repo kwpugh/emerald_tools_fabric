@@ -26,7 +26,7 @@ public class ToolRepair extends SpecialCraftingRecipe
     @Override
     public boolean matches(CraftingInventory inventory, World world)
     {
-        return matchResult(inventory).matches();
+        return matchStack(inventory).matches();
     }
 
     @Override
@@ -34,11 +34,11 @@ public class ToolRepair extends SpecialCraftingRecipe
     {
         if(EmeraldTools.CONFIG.GENERAL.enableGridCrafting)
         {
-            MatchResult matchResult = matchResult(inventory);
+            MatchStack matchStack = matchStack(inventory);
 
-            if (matchResult.matches())
+            if (matchStack.matches())
             {
-                ItemStack toolStack = matchResult.getToolStack();
+                ItemStack toolStack = matchStack.getToolStack();
                 ItemStack craftStack = toolStack.copy();
                 int damage = Math.max(craftStack.getDamage() - damageAmount, 0);
                 craftStack.setDamage(damage);
@@ -63,7 +63,7 @@ public class ToolRepair extends SpecialCraftingRecipe
         return RecipeInit.TOOL_REPAIR;
     }
 
-    private MatchResult matchResult(CraftingInventory inventory)
+    private MatchStack matchStack(CraftingInventory inventory)
     {
         ItemStack toolStack = ItemStack.EMPTY;
         ItemStack materialStack = ItemStack.EMPTY;
@@ -82,7 +82,7 @@ public class ToolRepair extends SpecialCraftingRecipe
 
                     if(!toolStack.isEmpty())
                     {
-                        return MatchResult.EMPTY;
+                        return MatchStack.EMPTY;
                     }
 
                     toolStack = stackToTest;
@@ -92,18 +92,18 @@ public class ToolRepair extends SpecialCraftingRecipe
                 {
                     if(!materialStack.isEmpty())
                     {
-                        return MatchResult.EMPTY;
+                        return MatchStack.EMPTY;
                     }
 
                     materialStack = stackToTest;
                     continue;
                 }
 
-                return MatchResult.EMPTY;
+                return MatchStack.EMPTY;
             }
         }
 
-        return new MatchResult(toolStack, materialStack);
+        return new MatchStack(toolStack, materialStack);
     }
 
     private void setRepairValues(ToolItem toolItem)
@@ -180,9 +180,9 @@ public class ToolRepair extends SpecialCraftingRecipe
         }
     }
 
-    private record MatchResult(ItemStack toolStack, ItemStack materialStack)
+    private record MatchStack(ItemStack toolStack, ItemStack materialStack)
     {
-        private static final MatchResult EMPTY = new MatchResult(ItemStack.EMPTY, ItemStack.EMPTY);
+        private static final MatchStack EMPTY = new MatchStack(ItemStack.EMPTY, ItemStack.EMPTY);
 
         private ItemStack getToolStack()
         {
