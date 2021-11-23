@@ -5,6 +5,7 @@ import com.kwpugh.emerald_tools.init.BlockInit;
 import com.kwpugh.emerald_tools.init.ItemInit;
 
 import com.kwpugh.emerald_tools.init.RecipeInit;
+import com.kwpugh.emerald_tools.init.TagInit;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
@@ -26,6 +27,7 @@ public class EmeraldTools implements ModInitializer
     	BlockInit.registerBlocks();
     	BlockInit.registerBlockItems();
     	ItemInit.registerItems();
+        TagInit.registerTags();
         RecipeInit.registerRecipes();
     }
 }

@@ -3,6 +3,7 @@ package com.kwpugh.emerald_tools.recipes;
 import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.emerald_tools.init.ItemInit;
 import com.kwpugh.emerald_tools.init.RecipeInit;
+import com.kwpugh.emerald_tools.init.TagInit;
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.*;
 import net.minecraft.recipe.RecipeSerializer;

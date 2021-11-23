@@ -273,12 +273,12 @@ public class ItemInit
 	 
 		 if(enablePaxels)
 		 {
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_paxel"), EMERALD_PAXEL);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_paxel"), RUBY_PAXEL);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_paxel"), AMETHYST_PAXEL);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_paxel"), STEEL_PAXEL);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_paxel"), OBSIDIAN_PAXEL);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_paxel"), COPPER_PAXEL);		 
+		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_paxel"), EMERALD_PAXEL);
+		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_paxel"), RUBY_PAXEL);
+		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_paxel"), AMETHYST_PAXEL);
+		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_paxel"), STEEL_PAXEL);
+		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_paxel"), OBSIDIAN_PAXEL);
+		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_paxel"), COPPER_PAXEL);
 		 }
 		 
 		 if(enableTreeAxes)
