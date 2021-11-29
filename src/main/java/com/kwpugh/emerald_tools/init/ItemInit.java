@@ -243,52 +243,167 @@ public class ItemInit
 	
 		 if(enableBows)
 		 {
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_bow"), EMERALD_BOW);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_bow"), RUBY_BOW);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_bow"), AMETHYST_BOW);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_bow"), STEEL_BOW);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_bow"), OBSIDIAN_BOW);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_bow"), COPPER_BOW);	 
+			if(enableEmerald)
+			{
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_bow"), EMERALD_BOW);
+			}
+
+			if(enableRuby)
+			{
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_bow"), RUBY_BOW);
+			}
+
+			if(enableAmethyst)
+			{
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_bow"), AMETHYST_BOW);
+			}
+
+			if(enableSteel)
+			{
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_bow"), STEEL_BOW);
+			}
+
+			if(enableObsidian)
+			{
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_bow"), OBSIDIAN_BOW);
+			}
+
+			if(enableCopper)
+			{
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_bow"), COPPER_BOW);
+			}
 		 }
 
 		 if(enableExcavators)
 		 {
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_excavator"), EMERALD_EXCAVATOR);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_excavator"), RUBY_EXCAVATOR);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_excavator"), AMETHYST_EXCAVATOR);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_excavator"), STEEL_EXCAVATOR);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_excavator"), OBSIDIAN_EXCAVATOR);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_excavator"), COPPER_EXCAVATOR);
+			 if(enableEmerald)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_excavator"), EMERALD_EXCAVATOR);
+			 }
+
+			 if(enableRuby)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_excavator"), RUBY_EXCAVATOR);
+			 }
+
+			 if(enableAmethyst)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_excavator"), AMETHYST_EXCAVATOR);
+			 }
+
+			 if(enableSteel)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_excavator"), STEEL_EXCAVATOR);
+			 }
+
+			 if(enableObsidian)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_excavator"), OBSIDIAN_EXCAVATOR);
+			 }
+
+			 if(enableCopper)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_excavator"), COPPER_EXCAVATOR);
+			 }
 		 }
 		 
 		 if(enableHammers)
 		 {
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_hammer"), EMERALD_HAMMER);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_hammer"), RUBY_HAMMER);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_hammer"), AMETHYST_HAMMER);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_hammer"), STEEL_HAMMER);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_hammer"), OBSIDIAN_HAMMER);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_hammer"), COPPER_HAMMER);
+			 if(enableEmerald)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_hammer"), EMERALD_HAMMER);
+			 }
+
+			 if(enableRuby)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_hammer"), RUBY_HAMMER);
+			 }
+
+			 if(enableAmethyst)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_hammer"), AMETHYST_HAMMER);
+			 }
+
+			 if(enableSteel)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_hammer"), STEEL_HAMMER);
+			 }
+
+			 if(enableObsidian)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_hammer"), OBSIDIAN_HAMMER);
+			 }
+
+			 if(enableCopper)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_hammer"), COPPER_HAMMER);
+			 }
 		 }
 	 
 		 if(enablePaxels)
 		 {
-		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_paxel"), EMERALD_PAXEL);
-		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_paxel"), RUBY_PAXEL);
-		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_paxel"), AMETHYST_PAXEL);
-		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_paxel"), STEEL_PAXEL);
-		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_paxel"), OBSIDIAN_PAXEL);
-		 	Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_paxel"), COPPER_PAXEL);
+			 if(enableEmerald)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_paxel"), EMERALD_PAXEL);
+			 }
+
+			 if(enableRuby)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_paxel"), RUBY_PAXEL);
+			 }
+
+			 if(enableAmethyst)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_paxel"), AMETHYST_PAXEL);
+			 }
+
+			 if(enableSteel)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_paxel"), STEEL_PAXEL);
+			 }
+
+			 if(enableObsidian)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_paxel"), OBSIDIAN_PAXEL);
+			 }
+
+			 if(enableCopper)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_paxel"), COPPER_PAXEL);
+			 }
 		 }
 		 
 		 if(enableTreeAxes)
 		 {
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_treeaxe"), EMERALD_TREEAXE);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_treeaxe"), RUBY_TREEAXE);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_treeaxe"), AMETHYST_TREEAXE);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_treeaxe"), STEEL_TREEAXE);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_treeaxe"), OBSIDIAN_TREEAXE);
-			 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_treeaxe"), COPPER_TREEAXE);
+			 if(enableEmerald)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_treeaxe"), EMERALD_TREEAXE);
+			 }
+
+			 if(enableRuby)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_treeaxe"), RUBY_TREEAXE);
+			 }
+
+			 if(enableAmethyst)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_treeaxe"), AMETHYST_TREEAXE);
+			 }
+
+			 if(enableSteel)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_treeaxe"), STEEL_TREEAXE);
+			 }
+
+			 if(enableObsidian)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_treeaxe"), OBSIDIAN_TREEAXE);
+			 }
+
+			 if(enableCopper)
+			 {
+				Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_treeaxe"), COPPER_TREEAXE);
+			 }
 		 }
 	 }	 	
 }
