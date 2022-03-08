@@ -1,6 +1,7 @@
 {
-    "variants": 
-    {
-        "": { "model": "emerald_tools:block/steel_block" }
+    "variants": {
+        "": {
+            "model": "emerald_tools:block/steel_block"
+        }
     }
 }

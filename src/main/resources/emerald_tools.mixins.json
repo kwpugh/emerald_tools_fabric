@@ -4,8 +4,6 @@
   "package": "com.kwpugh.emerald_tools.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "ItemPredicateMixin",
-    "SheepEntityMixin",
     "AnvilScreenHandlerMixin",
     "ForgingScreenHandlerAccessor"
   ],

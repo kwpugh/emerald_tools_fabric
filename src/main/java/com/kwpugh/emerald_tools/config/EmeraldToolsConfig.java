@@ -13,34 +13,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
     @Config(name = "general")
 	public static class General implements ConfigData
 	{
-    	@Comment("\n"
-    			+"\n"
-    			+"\n"
-    			+"******************************"
-    			+"\nEXTRA TOOLS"
-    			+"\nPaxels, Hammers,"
-      			+"\nExcavators, & TreeAxes"
-    			+"\n******************************")
-    	public boolean enableHammers = true;
-    	public boolean enableExcavators = true;
-    	public boolean enablePaxels = true;
-    	public boolean enableTreeAxes = true;
-    	public boolean enableBows = true;
-
-    	@Comment("\n"
-    			+"\n"
-				+"\n"
-    			+"******************************"
-    			+"\nSETS"
-    			+"\nArmors, Tools, & Weapons"
-    			+"\n******************************")
-    	public boolean enableEmeraldSet = true;
-    	public boolean enableRubySet = true;
-    	public boolean enableSteelSet = true;
-    	public boolean enableObsidianSet = true;
-    	public boolean enableCoppperSet = true;
-    	public boolean enableAmethystSet = true;
-
 		@Comment("\n"
 				+"\n"
 				+"\n"
