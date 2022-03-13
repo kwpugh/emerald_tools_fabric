@@ -4,6 +4,7 @@ package com.kwpugh.emerald_tools.mixin;
 //import net.minecraft.item.ItemStack;
 //import net.minecraft.item.Items;
 //import net.minecraft.predicate.item.ItemPredicate;
+//import net.fabricmc.fabric.api.mininglevel.v1.FabricMineableTags;
 //import org.jetbrains.annotations.Nullable;
 //import org.spongepowered.asm.mixin.Final;
 //import org.spongepowered.asm.mixin.Mixin;

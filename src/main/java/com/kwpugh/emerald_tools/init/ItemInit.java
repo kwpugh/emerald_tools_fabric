@@ -124,7 +124,7 @@ public class ItemInit
 	public static final Item COPPER_AXE = new ModAxe(COPPER_TOOL_MATERIAL, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_SHOVEL = new ModShovel(COPPER_TOOL_MATERIAL, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_HOE = new ModHoe(COPPER_TOOL_MATERIAL, -2, -1.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
-	public static final Item COPPER_SHEARS = new ModShears((new Item.Settings()).maxDamage(copperDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	//public static final Item COPPER_SHEARS = new ModShears((new Item.Settings()).maxDamage(copperDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_EXCAVATOR = new ModExcavator(COPPER_TOOL_MATERIAL, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_HAMMER = new ModHammer(COPPER_TOOL_MATERIAL, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_PAXEL = new ModPaxel(COPPER_TOOL_MATERIAL, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
@@ -201,7 +201,7 @@ public class ItemInit
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_axe"), COPPER_AXE);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_shovel"), COPPER_SHOVEL);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_hoe"), COPPER_HOE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_shears"), COPPER_SHEARS);
+		 //Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_shears"), COPPER_SHEARS);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_helmet"), COPPER_HELMET);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_chestplate"), COPPER_CHESTPLATE);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_leggings"), COPPER_LEGGINGS);
