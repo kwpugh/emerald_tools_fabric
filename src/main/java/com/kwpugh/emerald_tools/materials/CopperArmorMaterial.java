@@ -15,10 +15,13 @@ public class CopperArmorMaterial implements ArmorMaterial
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.copperArmorEnchantability;
 	private static float toughness = EmeraldTools.CONFIG.GENERAL.copperToughness;
 	private static float knochback = EmeraldTools.CONFIG.GENERAL.copperKnockbackResistance;
-	
+	private static int copperHeadProtection = EmeraldTools.CONFIG.GENERAL.copperHeadProtection;
+	private static int copperChestProtection = EmeraldTools.CONFIG.GENERAL.copperChestProtection;
+	private static int copperLeggingsProtection = EmeraldTools.CONFIG.GENERAL.copperLeggingsProtection;
+	private static int copperBootsProtection = EmeraldTools.CONFIG.GENERAL.copperBootsProtection;
 			
 	private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION_AMOUNT = new int[]{2, 5, 6, 2};
+    private static final int[] PROTECTION_AMOUNT = new int[]{copperHeadProtection, copperLeggingsProtection, copperChestProtection, copperBootsProtection};
     
 	@Override
 	public int getDurability(EquipmentSlot slot) 

@@ -57,6 +57,10 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
       	public int amethystArmorEnchantability = 10;
       	public float amethystToughness = 2.0F;
       	public float amethystKnockbackResistance = 0.5F;
+		public int amethystHeadProtection = 3;
+		public int amethystChestProtection = 8;
+		public int amethystLeggingsProtection = 6;
+		public int amethystBootsProtection = 3;
 
        	@Comment("\n"
     			+"\n"
@@ -80,6 +84,10 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
       	public int copperArmorEnchantability = 4;
       	public float copperToughness = 1.0F;
       	public float copperKnockbackResistance = 0.5F;
+		public int copperHeadProtection = 2;
+		public int copperChestProtection = 6;
+		public int copperLeggingsProtection = 5;
+		public int copperBootsProtection = 2;
 
        	@Comment("\n"
     			+"\n"
@@ -103,6 +111,10 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
       	public int emeraldArmorEnchantability = 12;
       	public float emeraldToughness = 2.0F;
       	public float emeraldKnockbackResistance = 0.0F;
+		public int emeraldHeadProtection = 3;
+		public int emeraldChestProtection = 8;
+		public int emeraldLeggingsProtection = 6;
+		public int emeraldBootsProtection = 3;
 
        	@Comment("\n"
     			+"\n"
@@ -127,6 +139,10 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
       	public int rubyArmorEnchantability = 12;
       	public float rubyToughness = 2.0F;
       	public float rubyKnockbackResistance = 0.0F;
+		public int rubyHeadProtection = 3;
+		public int rubyChestProtection = 8;
+		public int rubyLeggingsProtection = 6;
+		public int rubyBootsProtection = 3;
 
        	@Comment("\n"
     			+"\n"
@@ -150,6 +166,10 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
       	public int steelArmorEnchantability = 9;
       	public float steelToughness = 1.0F;
       	public float steelKnockbackResistance = 0.5F;
+		public int steelHeadProtection = 2;
+		public int steelChestProtection = 6;
+		public int steelLeggingsProtection = 5;
+		public int steelBootsProtection = 2;
 
        	@Comment("\n"
     			+"\n"
@@ -173,6 +193,10 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
       	public int obsidianArmorEnchantability = 4;
       	public float obsidianToughness = 1.0F;
       	public float obsidianKnockbackResistance = 0.5F;
+		public int obsidianHeadProtection = 2;
+		public int obsidianChestProtection = 6;
+		public int obsidianLeggingsProtection = 5;
+		public int obsidianBootsProtection = 2;
 
        	@Comment("\n"
     			+"\n"

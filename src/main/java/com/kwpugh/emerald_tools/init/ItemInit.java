@@ -30,6 +30,7 @@ public class ItemInit
 	public static final ArmorMaterial COPPER_ARMOR_MATERIAL = new CopperArmorMaterial();
 	public static final ToolMaterial AMETHYST_TOOL_MATERIAL = new AmethystToolMaterial();
 	public static final ArmorMaterial AMETHYST_ARMOR_MATERIAL = new AmethystArmorMaterial();
+	public static final ToolMaterial RUBY_STEEL_TOOL_MATERIAL = new RubySteelToolMaterial();
 
 
 	static int emeraldDurability = EmeraldTools.CONFIG.GENERAL.emeraldDurability;
@@ -58,7 +59,7 @@ public class ItemInit
 	public static final Item RUBY = new Item((new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item RUBY_SWORD = new ModSword(RUBY_TOOL_MATERIAL, 3, -2.4F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item RUBY_BOW = new ModBow((new Item.Settings()).maxDamage(rubyDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
-	public static final Item RUBY_STEEL_SWORD = new ModSword(RUBY_TOOL_MATERIAL, 3, -2.4F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item RUBY_STEEL_SWORD = new ModSword(RUBY_STEEL_TOOL_MATERIAL, 3, -2.4F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item RUBY_PICKAXE = new ModPickaxe(RUBY_TOOL_MATERIAL, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item RUBY_AXE = new ModAxe(RUBY_TOOL_MATERIAL, 5.0F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item RUBY_SHOVEL = new ModShovel(RUBY_TOOL_MATERIAL, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));

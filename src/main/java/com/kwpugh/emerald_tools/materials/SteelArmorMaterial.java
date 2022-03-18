@@ -15,9 +15,13 @@ public class SteelArmorMaterial implements ArmorMaterial
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.steelArmorEnchantability;
 	private static float toughness = EmeraldTools.CONFIG.GENERAL.steelToughness;
 	private static float knochback = EmeraldTools.CONFIG.GENERAL.steelKnockbackResistance;
+	private static int steelHeadProtection = EmeraldTools.CONFIG.GENERAL.steelHeadProtection;
+	private static int steelChestProtection = EmeraldTools.CONFIG.GENERAL.steelChestProtection;
+	private static int steelLeggingsProtection = EmeraldTools.CONFIG.GENERAL.steelLeggingsProtection;
+	private static int steelBootsProtection = EmeraldTools.CONFIG.GENERAL.steelBootsProtection;
 
 	private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION_AMOUNT = new int[]{2, 5, 6, 2};
+    private static final int[] PROTECTION_AMOUNT = new int[]{steelHeadProtection, steelLeggingsProtection, steelChestProtection, steelBootsProtection};
     
 	@Override
 	public int getDurability(EquipmentSlot slot) 

@@ -15,10 +15,13 @@ public class RubyArmorMaterial implements ArmorMaterial
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.rubyArmorEnchantability;
 	private static float toughness = EmeraldTools.CONFIG.GENERAL.rubyToughness;
 	private static float knochback = EmeraldTools.CONFIG.GENERAL.rubyKnockbackResistance;
-	
+	private static int rubyHeadProtection = EmeraldTools.CONFIG.GENERAL.rubyHeadProtection;
+	private static int rubyChestProtection = EmeraldTools.CONFIG.GENERAL.rubyChestProtection;
+	private static int rubyLeggingsProtection = EmeraldTools.CONFIG.GENERAL.rubyLeggingsProtection;
+	private static int rubyBootsProtection = EmeraldTools.CONFIG.GENERAL.rubyBootsProtection;
 			
 	private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION_AMOUNT = new int[]{3, 6, 8, 3};
+    private static final int[] PROTECTION_AMOUNT = new int[]{rubyHeadProtection, rubyLeggingsProtection, rubyChestProtection, rubyBootsProtection};
     
 	@Override
 	public int getDurability(EquipmentSlot slot) 

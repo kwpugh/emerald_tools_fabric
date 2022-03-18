@@ -15,10 +15,13 @@ public class ObsidianArmorMaterial implements ArmorMaterial
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.obsidianArmorEnchantability;
 	private static float toughness = EmeraldTools.CONFIG.GENERAL.obsidianToughness;
 	private static float knochback = EmeraldTools.CONFIG.GENERAL.obsidianKnockbackResistance;
-	
+	private static int obsidianHeadProtection = EmeraldTools.CONFIG.GENERAL.obsidianHeadProtection;
+	private static int obsidianChestProtection = EmeraldTools.CONFIG.GENERAL.obsidianChestProtection;
+	private static int obsidianLeggingsProtection = EmeraldTools.CONFIG.GENERAL.obsidianLeggingsProtection;
+	private static int obsidianBootsProtection = EmeraldTools.CONFIG.GENERAL.obsidianBootsProtection;
 			
 	private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION_AMOUNT = new int[]{2, 5, 6, 2};
+    private static final int[] PROTECTION_AMOUNT = new int[]{obsidianHeadProtection, obsidianLeggingsProtection, obsidianChestProtection, obsidianBootsProtection};
     
 	@Override
 	public int getDurability(EquipmentSlot slot) 

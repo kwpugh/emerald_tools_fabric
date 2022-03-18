@@ -15,10 +15,13 @@ public class AmethystArmorMaterial implements ArmorMaterial
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.amethystArmorEnchantability;
 	private static float toughness = EmeraldTools.CONFIG.GENERAL.amethystToughness;
 	private static float knochback = EmeraldTools.CONFIG.GENERAL.amethystKnockbackResistance;
-	
+	private static int amethystHeadProtection = EmeraldTools.CONFIG.GENERAL.amethystHeadProtection;
+	private static int amethystChestProtection = EmeraldTools.CONFIG.GENERAL.amethystChestProtection;
+	private static int amethystLeggingsProtection = EmeraldTools.CONFIG.GENERAL.amethystLeggingsProtection;
+	private static int amethystBootsProtection = EmeraldTools.CONFIG.GENERAL.amethystBootsProtection;
 			
 	private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION_AMOUNT = new int[]{3, 6, 8, 3};
+    private static final int[] PROTECTION_AMOUNT = new int[]{amethystHeadProtection, amethystLeggingsProtection, amethystChestProtection, amethystBootsProtection};
     
 	@Override
 	public int getDurability(EquipmentSlot slot) 
