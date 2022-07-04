@@ -1,12 +1,10 @@
 package com.kwpugh.emerald_tools.items.areatools;
 
 import com.kwpugh.pugh_tools.Tools.TreeAxe;
-
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 
@@ -22,6 +20,6 @@ public class ModTreeAxe extends TreeAxe
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
     {
-        tooltip.add(new TranslatableText("item.emerald_tools.treeaxe.tip1").formatted(Formatting.GREEN));
+        tooltip.add(Text.translatable("item.emerald_tools.treeaxe.tip1").formatted(Formatting.GREEN));
     }
 }

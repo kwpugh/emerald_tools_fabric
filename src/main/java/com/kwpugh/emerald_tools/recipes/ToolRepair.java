@@ -147,6 +147,16 @@ public class ToolRepair extends SpecialCraftingRecipe
             repairItemList.add(Items.IRON_INGOT);
             damageAmount = EmeraldTools.CONFIG.GENERAL.ironRepairAmount;
         }
+        else if(toolItem.getMaterial() == ToolMaterials.DIAMOND)
+        {
+            repairItemList.add(Items.DIAMOND);
+            damageAmount = EmeraldTools.CONFIG.GENERAL.diamondRepairAmount;
+        }
+        else if(toolItem.getMaterial() == ToolMaterials.NETHERITE)
+        {
+            repairItemList.add(Items.NETHERITE_INGOT);
+            damageAmount = EmeraldTools.CONFIG.GENERAL.netheriteRepairAmount;
+        }
         else if(toolItem.getMaterial() == ItemInit.COPPER_TOOL_MATERIAL)
         {
             repairItemList.add(Items.RAW_COPPER);

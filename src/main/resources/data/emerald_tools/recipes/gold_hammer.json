@@ -1,0 +1,19 @@
+ {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "eee",
+    "ese",
+    " s "
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "e": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "emerald_tools:gold_hammer"
+  }
+}

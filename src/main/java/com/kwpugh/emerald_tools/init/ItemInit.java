@@ -13,6 +13,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -125,7 +126,6 @@ public class ItemInit
 	public static final Item COPPER_AXE = new ModAxe(COPPER_TOOL_MATERIAL, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_SHOVEL = new ModShovel(COPPER_TOOL_MATERIAL, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_HOE = new ModHoe(COPPER_TOOL_MATERIAL, -2, -1.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
-	//public static final Item COPPER_SHEARS = new ModShears((new Item.Settings()).maxDamage(copperDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_EXCAVATOR = new ModExcavator(COPPER_TOOL_MATERIAL, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_HAMMER = new ModHammer(COPPER_TOOL_MATERIAL, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_PAXEL = new ModPaxel(COPPER_TOOL_MATERIAL, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
@@ -134,7 +134,32 @@ public class ItemInit
 	public static final Item COPPER_CHESTPLATE = new ModArmor(COPPER_ARMOR_MATERIAL, EquipmentSlot.CHEST, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_LEGGINGS = new ModArmor(COPPER_ARMOR_MATERIAL, EquipmentSlot.LEGS, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_BOOTS = new ModArmor(COPPER_ARMOR_MATERIAL, EquipmentSlot.FEET, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
-		
+
+	public static final Item WOODEN_EXCAVATOR = new ModExcavator(ToolMaterials.WOOD, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item WOODEN_HAMMER = new ModHammer(ToolMaterials.WOOD, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item WOODEN_PAXEL = new ModPaxel(ToolMaterials.WOOD, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item WOODEN_TREEAXE = new ModTreeAxe(ToolMaterials.WOOD, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+
+	public static final Item GOLD_EXCAVATOR = new ModExcavator(ToolMaterials.GOLD, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item GOLD_HAMMER = new ModHammer(ToolMaterials.GOLD, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item GOLD_PAXEL = new ModPaxel(ToolMaterials.GOLD, 6.0F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item GOLD_TREEAXE = new ModTreeAxe(ToolMaterials.GOLD, 6.0F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+
+	public static final Item IRON_EXCAVATOR = new ModExcavator(ToolMaterials.IRON, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item IRON_HAMMER = new ModHammer(ToolMaterials.IRON, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item IRON_PAXEL = new ModPaxel(ToolMaterials.IRON, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item IRON_TREEAXE = new ModTreeAxe(ToolMaterials.IRON, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+
+	public static final Item DIAMOND_EXCAVATOR = new ModExcavator(ToolMaterials.DIAMOND, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item DIAMOND_HAMMER = new ModHammer(ToolMaterials.DIAMOND, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item DIAMOND_PAXEL = new ModPaxel(ToolMaterials.DIAMOND, 5.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item DIAMOND_TREEAXE = new ModTreeAxe(ToolMaterials.DIAMOND, 5.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+
+	public static final Item NETHERITE_EXCAVATOR = new ModExcavator(ToolMaterials.NETHERITE, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item NETHERITE_HAMMER = new ModHammer(ToolMaterials.NETHERITE, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item NETHERITE_PAXEL = new ModPaxel(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item NETHERITE_TREEAXE = new ModTreeAxe(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+
 
 	public static void registerItems()
 	{
@@ -202,7 +227,6 @@ public class ItemInit
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_axe"), COPPER_AXE);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_shovel"), COPPER_SHOVEL);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_hoe"), COPPER_HOE);
-		 //Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_shears"), COPPER_SHEARS);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_helmet"), COPPER_HELMET);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_chestplate"), COPPER_CHESTPLATE);
 		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_leggings"), COPPER_LEGGINGS);
@@ -223,6 +247,11 @@ public class ItemInit
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_excavator"), STEEL_EXCAVATOR);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_excavator"), OBSIDIAN_EXCAVATOR);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_excavator"), COPPER_EXCAVATOR);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "wooden_excavator"), WOODEN_EXCAVATOR);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "gold_excavator"), GOLD_EXCAVATOR);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "iron_excavator"), IRON_EXCAVATOR);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "diamond_excavator"), DIAMOND_EXCAVATOR);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "netherite_excavator"), NETHERITE_EXCAVATOR);
 
 
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_hammer"), EMERALD_HAMMER);
@@ -231,6 +260,11 @@ public class ItemInit
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_hammer"), STEEL_HAMMER);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_hammer"), OBSIDIAN_HAMMER);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_hammer"), COPPER_HAMMER);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "wooden_hammer"), WOODEN_HAMMER);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "gold_hammer"), GOLD_HAMMER);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "iron_hammer"), IRON_HAMMER);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "diamond_hammer"), DIAMOND_HAMMER);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "netherite_hammer"), NETHERITE_HAMMER);
 
 
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_paxel"), EMERALD_PAXEL);
@@ -239,6 +273,11 @@ public class ItemInit
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_paxel"), STEEL_PAXEL);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_paxel"), OBSIDIAN_PAXEL);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_paxel"), COPPER_PAXEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "wooden_paxel"), WOODEN_PAXEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "gold_paxel"), GOLD_PAXEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "iron_paxel"), IRON_PAXEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "diamond_paxel"), DIAMOND_PAXEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "netherite_paxel"), NETHERITE_PAXEL);
 
 
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_treeaxe"), EMERALD_TREEAXE);
@@ -247,6 +286,11 @@ public class ItemInit
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_treeaxe"), STEEL_TREEAXE);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_treeaxe"), OBSIDIAN_TREEAXE);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_treeaxe"), COPPER_TREEAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "wooden_treeaxe"), WOODEN_TREEAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "gold_treeaxe"), GOLD_TREEAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "iron_treeaxe"), IRON_TREEAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "diamond_treeaxe"), DIAMOND_TREEAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "netherite_treeaxe"), NETHERITE_TREEAXE);
 	 }	 	
 }
 

@@ -1,8 +1,6 @@
 package com.kwpugh.emerald_tools.items;
 
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-
+import com.kwpugh.emerald_tools.EmeraldTools;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
@@ -20,8 +18,16 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+
 public class ModBow extends BowItem 
 {
+	public static float speed = EmeraldTools.CONFIG.GENERAL.projectileSpeed;
+	public static double damage1 = EmeraldTools.CONFIG.GENERAL.projectileDamageFactorFirst;
+	public static double damage2 = EmeraldTools.CONFIG.GENERAL.projectileDamageFactorSecond;
+	public static float divergence = EmeraldTools.CONFIG.GENERAL.projectileDivergence;
+
 	public ModBow(Settings settings)
 	{
 		super(settings);
@@ -51,7 +57,7 @@ public class ModBow extends BowItem
 					{
 						ArrowItem arrowItem = (ArrowItem) (itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
 						PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-						persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * 6.0F, 0.0F);
+						persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * speed, divergence);
 						
 						if (f == 1.0F) 
 						{
@@ -60,12 +66,16 @@ public class ModBow extends BowItem
 
 						int j = EnchantmentHelper.getLevel(Enchantments.POWER, stack);
 						
-						if (j > 0) 
+						if (j > 0)
 						{
-							persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + j * 0.5D + 0.5D);
+							persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double)j * damage1 + damage2);
 						}
 
-						persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + j * 0.5D + 0.5D);
+						double base = persistentProjectileEntity.getDamage();
+						double damage = (persistentProjectileEntity.getDamage() + j * damage1 + damage2);
+
+						System.out.println("base: " + base);
+						System.out.println("total damage: " + damage);
 
 						int k = EnchantmentHelper.getLevel(Enchantments.PUNCH, stack);
 						
@@ -90,8 +100,8 @@ public class ModBow extends BowItem
 						world.spawnEntity(persistentProjectileEntity);
 					}
 
-					world.playSound((PlayerEntity) null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F / (world.random.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
-					
+					world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F / (world.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);
+
 					if (!bl2 && !playerEntity.getAbilities().creativeMode) 
 					{
 						itemStack.decrement(1);

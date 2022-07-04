@@ -4,9 +4,8 @@ import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.emerald_tools.init.ItemInit;
 import com.kwpugh.emerald_tools.mixin.ForgingScreenHandlerAccessor;
 import net.minecraft.item.ItemStack;
-
 import net.minecraft.screen.Property;
-import net.minecraft.text.LiteralText;
+import net.minecraft.text.Text;
 import org.apache.commons.lang3.StringUtils;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
@@ -29,7 +28,7 @@ public class UnbreakableRuby
 
                     if(!StringUtils.isBlank(newItemName))
                     {
-                        result.setCustomName(new LiteralText(newItemName));
+                        result.setCustomName(Text.translatable(newItemName));
                     }
                     else
                     {

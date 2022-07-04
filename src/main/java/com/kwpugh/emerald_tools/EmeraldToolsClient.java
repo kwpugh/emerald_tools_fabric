@@ -6,6 +6,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
+import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.util.Identifier;
 
 /*
@@ -18,7 +19,7 @@ public class EmeraldToolsClient implements ClientModInitializer
   @Override
   public void onInitializeClient() 
   {
-	    FabricModelPredicateProviderRegistry.register(ItemInit.EMERALD_BOW, new Identifier("pull"), (stack, world, entity, i) -> 
+  		ModelPredicateProviderRegistry.register(ItemInit.EMERALD_BOW, new Identifier("pull"), (stack, world, entity, i) ->
 	    {
 	      if (entity == null) 
 	      {
@@ -30,16 +31,16 @@ public class EmeraldToolsClient implements ClientModInitializer
 	            : (float) (stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0F;
 	      }
 	    });
-	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.EMERALD_BOW, new Identifier("pulling"),
+
+  		ModelPredicateProviderRegistry.register(ItemInit.EMERALD_BOW, new Identifier("pulling"),
 	        (stack, world, entity, i) -> 
 	    	{
 	          return entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F;
 	        });
-	  
-	   
-	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.RUBY_BOW, new Identifier("pull"), (stack, world, entity, i) -> 
+
+
+
+	  	ModelPredicateProviderRegistry.register(ItemInit.RUBY_BOW, new Identifier("pull"), (stack, world, entity, i) ->
 	    {
 	      if (entity == null) 
 	      {
@@ -51,8 +52,8 @@ public class EmeraldToolsClient implements ClientModInitializer
 	            : (float) (stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0F;
 	      }
 	    });
-	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.RUBY_BOW, new Identifier("pulling"),
+
+	  	ModelPredicateProviderRegistry.register(ItemInit.RUBY_BOW, new Identifier("pulling"),
 	        (stack, world, entity, i) -> 
 	    	{
 	          return entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F;
@@ -60,7 +61,7 @@ public class EmeraldToolsClient implements ClientModInitializer
 
 	    
 	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.OBSIDIAN_BOW, new Identifier("pull"), (stack, world, entity, i) -> 
+	    ModelPredicateProviderRegistry.register(ItemInit.OBSIDIAN_BOW, new Identifier("pull"), (stack, world, entity, i) ->
 	    {
 	      if (entity == null) 
 	      {
@@ -73,7 +74,7 @@ public class EmeraldToolsClient implements ClientModInitializer
 	      }
 	    });
 	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.OBSIDIAN_BOW, new Identifier("pulling"),
+	    ModelPredicateProviderRegistry.register(ItemInit.OBSIDIAN_BOW, new Identifier("pulling"),
 	        (stack, world, entity, i) -> 
 	    	{
 	          return entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F;
@@ -81,7 +82,7 @@ public class EmeraldToolsClient implements ClientModInitializer
 
 	    
 	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.STEEL_BOW, new Identifier("pull"), (stack, world, entity, i) -> 
+	    ModelPredicateProviderRegistry.register(ItemInit.STEEL_BOW, new Identifier("pull"), (stack, world, entity, i) ->
 	    {
 	      if (entity == null) 
 	      {
@@ -94,14 +95,14 @@ public class EmeraldToolsClient implements ClientModInitializer
 	      }
 	    });
 	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.STEEL_BOW, new Identifier("pulling"),
+	    ModelPredicateProviderRegistry.register(ItemInit.STEEL_BOW, new Identifier("pulling"),
 	        (stack, world, entity, i) -> 
 	    	{
 	          return entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F;
 	        }); 
 	    
 	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.COPPER_BOW, new Identifier("pull"), (stack, world, entity, i) -> 
+	    ModelPredicateProviderRegistry.register(ItemInit.COPPER_BOW, new Identifier("pull"), (stack, world, entity, i) ->
 	    {
 	      if (entity == null) 
 	      {
@@ -114,14 +115,14 @@ public class EmeraldToolsClient implements ClientModInitializer
 	      }
 	    });
 	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.COPPER_BOW, new Identifier("pulling"),
+	    ModelPredicateProviderRegistry.register(ItemInit.COPPER_BOW, new Identifier("pulling"),
 	        (stack, world, entity, i) -> 
 	    	{
 	          return entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F;
 	        }); 
 	    
 	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.AMETHYST_BOW, new Identifier("pull"), (stack, world, entity, i) -> 
+	    ModelPredicateProviderRegistry.register(ItemInit.AMETHYST_BOW, new Identifier("pull"), (stack, world, entity, i) ->
 	    {
 	      if (entity == null) 
 	      {
@@ -134,7 +135,7 @@ public class EmeraldToolsClient implements ClientModInitializer
 	      }
 	    });
 	    
-	    FabricModelPredicateProviderRegistry.register(ItemInit.AMETHYST_BOW, new Identifier("pulling"),
+	    ModelPredicateProviderRegistry.register(ItemInit.AMETHYST_BOW, new Identifier("pulling"),
 	        (stack, world, entity, i) -> 
 	    	{
 	          return entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F;
