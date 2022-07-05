@@ -71,12 +71,6 @@ public class ModBow extends BowItem
 							persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double)j * damage1 + damage2);
 						}
 
-						double base = persistentProjectileEntity.getDamage();
-						double damage = (persistentProjectileEntity.getDamage() + j * damage1 + damage2);
-
-						System.out.println("base: " + base);
-						System.out.println("total damage: " + damage);
-
 						int k = EnchantmentHelper.getLevel(Enchantments.PUNCH, stack);
 						
 						if (k > 0) {
