@@ -155,10 +155,10 @@ public class ItemInit
 	public static final Item DIAMOND_PAXEL = new ModPaxel(ToolMaterials.DIAMOND, 5.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item DIAMOND_TREEAXE = new ModTreeAxe(ToolMaterials.DIAMOND, 5.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 
-	public static final Item NETHERITE_EXCAVATOR = new ModExcavator(ToolMaterials.NETHERITE, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
-	public static final Item NETHERITE_HAMMER = new ModHammer(ToolMaterials.NETHERITE, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
-	public static final Item NETHERITE_PAXEL = new ModPaxel(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
-	public static final Item NETHERITE_TREEAXE = new ModTreeAxe(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item NETHERITE_EXCAVATOR = new ModExcavator(ToolMaterials.NETHERITE, 1.5F, -3.0F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item NETHERITE_HAMMER = new ModHammer(ToolMaterials.NETHERITE, 1, -2.8F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item NETHERITE_PAXEL = new ModPaxel(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item NETHERITE_TREEAXE = new ModTreeAxe(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
 
 
 	public static void registerItems()
