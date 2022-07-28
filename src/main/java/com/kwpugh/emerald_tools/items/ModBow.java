@@ -24,9 +24,10 @@ import java.util.function.Predicate;
 public class ModBow extends BowItem 
 {
 	public static float speed = EmeraldTools.CONFIG.GENERAL.projectileSpeed;
-	public static double damage1 = EmeraldTools.CONFIG.GENERAL.projectileDamageFactorFirst;
-	public static double damage2 = EmeraldTools.CONFIG.GENERAL.projectileDamageFactorSecond;
+	public static double powerBonus = EmeraldTools.CONFIG.GENERAL.projectilePowerDamageBonus;
 	public static float divergence = EmeraldTools.CONFIG.GENERAL.projectileDivergence;
+	public static float roll = EmeraldTools.CONFIG.GENERAL.projectileRoll;
+	public static double extraDamage = EmeraldTools.CONFIG.GENERAL.projectileExtraDamage;
 
 	public ModBow(Settings settings)
 	{
@@ -36,9 +37,8 @@ public class ModBow extends BowItem
 	@Override
 	public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) 
 	{
-		if (user instanceof PlayerEntity) 
+		if (user instanceof PlayerEntity playerEntity)
 		{
-			PlayerEntity playerEntity = (PlayerEntity) user;
 			boolean bl = playerEntity.getAbilities().creativeMode || EnchantmentHelper.getLevel(Enchantments.INFINITY, stack) > 0;
 			ItemStack itemStack = playerEntity.getArrowType(stack);
 			if (!itemStack.isEmpty() || bl) 
@@ -57,8 +57,10 @@ public class ModBow extends BowItem
 					{
 						ArrowItem arrowItem = (ArrowItem) (itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
 						PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-						persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * speed, divergence);
-						
+						persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), roll, f * speed, divergence);
+
+						persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + extraDamage);
+
 						if (f == 1.0F) 
 						{
 							persistentProjectileEntity.setCritical(true);
@@ -68,7 +70,7 @@ public class ModBow extends BowItem
 						
 						if (j > 0)
 						{
-							persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double)j * damage1 + damage2);
+							persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + ((double)j * powerBonus));
 						}
 
 						int k = EnchantmentHelper.getLevel(Enchantments.PUNCH, stack);

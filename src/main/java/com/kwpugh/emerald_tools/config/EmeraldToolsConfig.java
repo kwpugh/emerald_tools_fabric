@@ -30,10 +30,11 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
 				+"******************************"
 				+"\nGlobal Gem Bow Settings"
 				+"\n******************************")
-		public float projectileSpeed = 6.0F;
-		public double projectileDamageFactorFirst = 0.20D;
-		public double projectileDamageFactorSecond = 0.5D;
+		public float projectileSpeed = 3.0F;
 		public float projectileDivergence = 0.0F;
+		public float projectileRoll = 0.0F;
+		public double projectilePowerDamageBonus = 0.75D;
+		public double projectileExtraDamage = 0.0D;
 
 
 		@Comment("\n"
