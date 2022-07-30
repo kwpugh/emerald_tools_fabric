@@ -17,42 +17,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
 				+"\n"
 				+"\n"
 				+"******************************"
-				+"\nGlobal Gem Bow Settings"
-				+"\n******************************")
-		public float projectileSpeed = 4.0F;
-		public float projectileDivergence = 0.0F;
-		public float projectileRoll = 0.0F;
-		public double projectilePowerDamageBonus = 0.60D;
-		public int projectileFlameBurnSeconds = 100;
-		public double projectileExtraDamage = 0.0D;
-		public int projectileDropRange = 15;
-
-		@Comment("\n"
-				+"\n"
-				+"\n"
-				+"******************************"
-				+"\nGem Bow Zoom Multiplier"
-				+"\n- vanilla bow value = .15F"
-				+"\n- pretty good value = .45F"
-				+"\n- awesome value = .75F"
-				+"\n******************************")
-		public float bowZoomMultiplier = .45F;
-
-		@Comment("\n"
-				+"\n"
-				+"\n"
-				+"******************************"
-				+"\nVanilla Bow Durability"
-				+"\n******************************")
-		public int goldBowDurability = 415;
-		public int ironBowDurability = 512;
-		public int diamondBowDurability = 1562;
-		public int metheriteBowDurability = 2031;
-
-		@Comment("\n"
-				+"\n"
-				+"\n"
-				+"******************************"
 				+"\nCrafting Grid Repair"
 				+"\n- repair amount per item"
 				+"\n******************************")
@@ -69,6 +33,59 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
 		public int emeraldRepairAmount = 160;
 		public int amethystRepairAmount = 180;
 		public int rubyRepairAmount = 180;
+
+		@Comment("\n"
+				+"\n"
+				+"\n"
+				+"******************************"
+				+"\nGem Bow Zoom Multiplier"
+				+"\n- vanilla bow value = .15F"
+				+"\n- pretty good value = .45F"
+				+"\n- awesome value = .75F"
+				+"\n******************************")
+		public float bowZoomMultiplier = .45F;
+		public float bowZoomMultiplierRuby = .60F;
+		public float bowZoomMultiplierNetherite = .60F;
+
+		@Comment("\n"
+				+"\n"
+				+"\n"
+				+"******************************"
+				+"\nVanilla Bow Durability"
+				+"\n- other materials use their material values"
+				+"\n******************************")
+		public int goldBowDurability = 390;
+		public int ironBowDurability = 512;
+		public int diamondBowDurability = 1562;
+		public int netheriteBowDurability = 2031;
+
+		@Comment("\n"
+				+"\n"
+				+"\n"
+				+"******************************"
+				+"\nGlobal Gem Bow Settings"
+				+"\n******************************")
+		public float projectileSpeed = 4.0F;
+		public float projectileDivergence = 0.0F;
+		public float projectileRoll = 0.0F;
+		public double projectilePowerDamageBonus = 0.60D;
+		public int projectileFlameBurnSeconds = 100;
+		public double projectileExtraDamage = 0.0D;
+		public int projectileDropRange = 15;
+
+		@Comment("\n"
+				+"\n"
+				+"\n"
+				+"******************************"
+				+"\nNetherite Bow Settings"
+				+"\n******************************")
+		public float projectileSpeedNetherite = 5.0F;
+		public float projectileDivergenceNetherite = 0.0F;
+		public float projectileRollNetherite = 0.0F;
+		public double projectilePowerDamageBonusNetherite = 0.70D;
+		public int projectileFlameBurnSecondsNetherite = 100;
+		public double projectileExtraDamageNetherite = 3.0D;
+		public int projectileDropRangeNetherite = 30;
 
        	@Comment("\n"
     			+"\n"

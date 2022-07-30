@@ -6,9 +6,7 @@ import com.kwpugh.emerald_tools.items.areatools.ModExcavator;
 import com.kwpugh.emerald_tools.items.areatools.ModHammer;
 import com.kwpugh.emerald_tools.items.areatools.ModHammerCrude;
 import com.kwpugh.emerald_tools.items.areatools.ModTreeAxe;
-import com.kwpugh.emerald_tools.items.special.AmethystBow;
-import com.kwpugh.emerald_tools.items.special.AmethystHoe;
-import com.kwpugh.emerald_tools.items.special.AmethystPickaxe;
+import com.kwpugh.emerald_tools.items.special.*;
 import com.kwpugh.emerald_tools.materials.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
@@ -43,9 +41,9 @@ public class ItemInit
 	static int copperDurability = EmeraldTools.CONFIG.GENERAL.copperDurability;
 
 	static int goldDurability = EmeraldTools.CONFIG.GENERAL.goldBowDurability;
-	static int ironDurability = EmeraldTools.CONFIG.GENERAL.goldBowDurability;
-	static int diamondDurability = EmeraldTools.CONFIG.GENERAL.goldBowDurability;
-	static int netheriteDurability = EmeraldTools.CONFIG.GENERAL.goldBowDurability;
+	static int ironDurability = EmeraldTools.CONFIG.GENERAL.ironBowDurability;
+	static int diamondDurability = EmeraldTools.CONFIG.GENERAL.diamondBowDurability;
+	static int netheriteDurability = EmeraldTools.CONFIG.GENERAL.netheriteBowDurability;
 
 	
 	public static final Item EMERALD_SWORD = new ModSword(EMERALD_TOOL_MATERIAL, 3, -2.4F, new Item.Settings().group(EmeraldTools.EMERALD_TOOLS_GROUP));
@@ -168,7 +166,7 @@ public class ItemInit
 	public static final Item NETHERITE_HAMMER = new ModHammer(ToolMaterials.NETHERITE, 1, -2.8F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item NETHERITE_PAXEL = new ModPaxel(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item NETHERITE_TREEAXE = new ModTreeAxe(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
-	public static final Item NETHERITE_BOW = new ModBow((new Item.Settings()).maxDamage(netheriteDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item NETHERITE_BOW = new NetheriteBow((new Item.Settings()).maxDamage(netheriteDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 
 
 	public static void registerItems()
