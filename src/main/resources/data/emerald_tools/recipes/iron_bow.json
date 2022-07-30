@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": {
+    "item": "emerald_tools:iron_bow"
+  }
+}

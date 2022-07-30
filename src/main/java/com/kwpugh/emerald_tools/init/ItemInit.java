@@ -42,6 +42,11 @@ public class ItemInit
 	static int obsidianDurability = EmeraldTools.CONFIG.GENERAL.obsidianDurability;
 	static int copperDurability = EmeraldTools.CONFIG.GENERAL.copperDurability;
 
+	static int goldDurability = EmeraldTools.CONFIG.GENERAL.goldBowDurability;
+	static int ironDurability = EmeraldTools.CONFIG.GENERAL.goldBowDurability;
+	static int diamondDurability = EmeraldTools.CONFIG.GENERAL.goldBowDurability;
+	static int netheriteDurability = EmeraldTools.CONFIG.GENERAL.goldBowDurability;
+
 	
 	public static final Item EMERALD_SWORD = new ModSword(EMERALD_TOOL_MATERIAL, 3, -2.4F, new Item.Settings().group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item EMERALD_BOW = new ModBow((new Item.Settings()).maxDamage(emeraldDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
@@ -145,21 +150,25 @@ public class ItemInit
 	public static final Item GOLD_HAMMER = new ModHammerCrude(ToolMaterials.GOLD, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item GOLD_PAXEL = new ModPaxel(ToolMaterials.GOLD, 6.0F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item GOLD_TREEAXE = new ModTreeAxe(ToolMaterials.GOLD, 6.0F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item GOLD_BOW = new ModBow((new Item.Settings()).maxDamage(goldDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 
 	public static final Item IRON_EXCAVATOR = new ModExcavator(ToolMaterials.IRON, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item IRON_HAMMER = new ModHammerCrude(ToolMaterials.IRON, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item IRON_PAXEL = new ModPaxel(ToolMaterials.IRON, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item IRON_TREEAXE = new ModTreeAxe(ToolMaterials.IRON, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item IRON_BOW = new ModBow((new Item.Settings()).maxDamage(ironDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 
 	public static final Item DIAMOND_EXCAVATOR = new ModExcavator(ToolMaterials.DIAMOND, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item DIAMOND_HAMMER = new ModHammer(ToolMaterials.DIAMOND, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item DIAMOND_PAXEL = new ModPaxel(ToolMaterials.DIAMOND, 5.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item DIAMOND_TREEAXE = new ModTreeAxe(ToolMaterials.DIAMOND, 5.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item DIAMOND_BOW = new ModBow((new Item.Settings()).maxDamage(diamondDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 
 	public static final Item NETHERITE_EXCAVATOR = new ModExcavator(ToolMaterials.NETHERITE, 1.5F, -3.0F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item NETHERITE_HAMMER = new ModHammer(ToolMaterials.NETHERITE, 1, -2.8F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item NETHERITE_PAXEL = new ModPaxel(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item NETHERITE_TREEAXE = new ModTreeAxe(ToolMaterials.NETHERITE, 6.0F, -3.0F, (new Item.Settings()).fireproof().group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item NETHERITE_BOW = new ModBow((new Item.Settings()).maxDamage(netheriteDurability).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 
 
 	public static void registerItems()
@@ -240,6 +249,10 @@ public class ItemInit
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_bow"), STEEL_BOW);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_bow"), OBSIDIAN_BOW);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_bow"), COPPER_BOW);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "gold_bow"), GOLD_BOW);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "iron_bow"), IRON_BOW);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "diamond_bow"), DIAMOND_BOW);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "netherite_bow"), NETHERITE_BOW);
 
 
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_excavator"), EMERALD_EXCAVATOR);

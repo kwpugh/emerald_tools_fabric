@@ -89,21 +89,25 @@
   "item.emerald_tools.gold_hammer": "Golden Hammer",
   "item.emerald_tools.gold_paxel": "Golden Paxel",
   "item.emerald_tools.gold_treeaxe": "Golden TreeAxe",
+  "item.emerald_tools.gold_bow": "Golden Bow",
 
   "item.emerald_tools.iron_excavator": "Iron Excavator",
   "item.emerald_tools.iron_hammer": "Iron Hammer",
   "item.emerald_tools.iron_paxel": "Iron Paxel",
   "item.emerald_tools.iron_treeaxe": "Iron TreeAxe",
+  "item.emerald_tools.iron_bow": "Iron Bow",
 
   "item.emerald_tools.diamond_excavator": "Diamond Excavator",
   "item.emerald_tools.diamond_hammer": "Diamond Hammer",
   "item.emerald_tools.diamond_paxel": "Diamond Paxel",
   "item.emerald_tools.diamond_treeaxe": "Diamond TreeAxe",
+  "item.emerald_tools.diamond_bow": "Diamond Bow",
 
   "item.emerald_tools.netherite_excavator": "Netherite Excavator",
   "item.emerald_tools.netherite_hammer": "Netherite Hammer",
   "item.emerald_tools.netherite_paxel": "Netherite Paxel",
   "item.emerald_tools.netherite_treeaxe": "Netherite TreeAxe",
+  "item.emerald_tools.netherite_bow": "Netherite Bow",
 
   "item.emerald_tools.emerald_helmet": "Emerald Helmet",
   "item.emerald_tools.emerald_chestplate": "Emerald Chestplate",

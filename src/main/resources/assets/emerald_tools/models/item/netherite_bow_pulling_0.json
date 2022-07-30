@@ -1,0 +1,6 @@
+{
+    "parent": "emerald_tools:item/netherite_bow",
+    "textures": {
+        "layer0": "emerald_tools:item/netherite_bow_pulling_0"
+    }
+}

@@ -17,7 +17,21 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
 				+"\n"
 				+"\n"
 				+"******************************"
-				+"\nBow Zoom Multiplier"
+				+"\nGlobal Gem Bow Settings"
+				+"\n******************************")
+		public float projectileSpeed = 4.0F;
+		public float projectileDivergence = 0.0F;
+		public float projectileRoll = 0.0F;
+		public double projectilePowerDamageBonus = 0.60D;
+		public int projectileFlameBurnSeconds = 100;
+		public double projectileExtraDamage = 0.0D;
+		public int projectileDropRange = 15;
+
+		@Comment("\n"
+				+"\n"
+				+"\n"
+				+"******************************"
+				+"\nGem Bow Zoom Multiplier"
 				+"\n- vanilla bow value = .15F"
 				+"\n- pretty good value = .45F"
 				+"\n- awesome value = .75F"
@@ -28,14 +42,12 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
 				+"\n"
 				+"\n"
 				+"******************************"
-				+"\nGlobal Gem Bow Settings"
+				+"\nVanilla Bow Durability"
 				+"\n******************************")
-		public float projectileSpeed = 3.0F;
-		public float projectileDivergence = 0.0F;
-		public float projectileRoll = 0.0F;
-		public double projectilePowerDamageBonus = 0.75D;
-		public double projectileExtraDamage = 0.0D;
-
+		public int goldBowDurability = 415;
+		public int ironBowDurability = 512;
+		public int diamondBowDurability = 1562;
+		public int metheriteBowDurability = 2031;
 
 		@Comment("\n"
 				+"\n"
