@@ -1,5 +1,6 @@
 package com.kwpugh.emerald_tools.items.areatools;
 
+import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.pugh_tools.Tools.Hammer;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
@@ -15,7 +16,7 @@ public class ModHammer extends Hammer
 {
     public ModHammer(ToolMaterial material, int attackDamage, float attackSpeed, Item.Settings settings)
     {
-        super(material, attackDamage, attackSpeed, settings);
+        super(material, attackDamage, attackSpeed, EmeraldTools.CONFIG.GENERAL.enableFullDamage, settings);
     }
 
     @Override

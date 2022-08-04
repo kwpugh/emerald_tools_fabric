@@ -1,5 +1,6 @@
 package com.kwpugh.emerald_tools.items.areatools;
 
+import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.pugh_tools.Tools.HammerCrude;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
@@ -14,7 +15,7 @@ public class ModHammerCrude extends HammerCrude
 {
     public ModHammerCrude(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings)
     {
-        super(material, attackDamage, attackSpeed, settings);
+        super(material, attackDamage, attackSpeed, EmeraldTools.CONFIG.GENERAL.enableFullDamage, settings);
     }
 
     @Override

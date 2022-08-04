@@ -36,6 +36,14 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
 
 		@Comment("\n"
 				+"\n"
+				+ "***********************"
+				+"\nFull Tool Damage"
+				+"\n- effects hammer/excavator/treeaxe"
+				+"\n***********************")
+		public boolean enableFullDamage = false;
+
+		@Comment("\n"
+				+"\n"
 				+"\n"
 				+"******************************"
 				+"\nGem Bow Zoom Multiplier"
@@ -44,7 +52,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
 				+"\n- awesome value = .75F"
 				+"\n******************************")
 		public float bowZoomMultiplier = .45F;
-		public float bowZoomMultiplierRuby = .60F;
 		public float bowZoomMultiplierNetherite = .60F;
 
 		@Comment("\n"
