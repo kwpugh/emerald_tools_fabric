@@ -6,6 +6,10 @@ import com.kwpugh.emerald_tools.items.areatools.ModExcavator;
 import com.kwpugh.emerald_tools.items.areatools.ModHammer;
 import com.kwpugh.emerald_tools.items.areatools.ModHammerCrude;
 import com.kwpugh.emerald_tools.items.areatools.ModTreeAxe;
+import com.kwpugh.emerald_tools.items.arrows.AmethystArrowItem;
+import com.kwpugh.emerald_tools.items.arrows.DiamondArrowItem;
+import com.kwpugh.emerald_tools.items.arrows.EmeraldArrowItem;
+import com.kwpugh.emerald_tools.items.arrows.RubyArrowItem;
 import com.kwpugh.emerald_tools.items.special.*;
 import com.kwpugh.emerald_tools.materials.*;
 import net.minecraft.entity.EquipmentSlot;
@@ -139,6 +143,11 @@ public class ItemInit
 	public static final Item COPPER_LEGGINGS = new ModArmor(COPPER_ARMOR_MATERIAL, EquipmentSlot.LEGS, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item COPPER_BOOTS = new ModArmor(COPPER_ARMOR_MATERIAL, EquipmentSlot.FEET, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 
+	public static final Item EMERALD_ARROW = new EmeraldArrowItem((new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item RUBY_ARROW = new RubyArrowItem((new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item AMETHYST_ARROW = new AmethystArrowItem((new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+	public static final Item DIAMOND_ARROW = new DiamondArrowItem((new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
+
 	public static final Item WOODEN_EXCAVATOR = new ModExcavator(ToolMaterials.WOOD, 1.5F, -3.0F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item WOODEN_HAMMER = new ModHammerCrude(ToolMaterials.WOOD, 1, -2.8F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
 	public static final Item WOODEN_PAXEL = new ModPaxel(ToolMaterials.WOOD, 6.0F, -3.1F, (new Item.Settings()).group(EmeraldTools.EMERALD_TOOLS_GROUP));
@@ -171,75 +180,73 @@ public class ItemInit
 
 	public static void registerItems()
 	{
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_sword"), EMERALD_SWORD);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_pickaxe"), EMERALD_PICKAXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_axe"), EMERALD_AXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_shovel"), EMERALD_SHOVEL);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_hoe"), EMERALD_HOE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_helmet"), EMERALD_HELMET);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_chestplate"), EMERALD_CHESTPLATE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_leggings"), EMERALD_LEGGINGS);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_boots"), EMERALD_BOOTS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_sword"), EMERALD_SWORD);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_pickaxe"), EMERALD_PICKAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_axe"), EMERALD_AXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_shovel"), EMERALD_SHOVEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_hoe"), EMERALD_HOE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_helmet"), EMERALD_HELMET);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_chestplate"), EMERALD_CHESTPLATE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_leggings"), EMERALD_LEGGINGS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_boots"), EMERALD_BOOTS);
 
 
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby"), RUBY);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_sword"), RUBY_SWORD);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_steel_sword"), RUBY_STEEL_SWORD);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_pickaxe"), RUBY_PICKAXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_axe"), RUBY_AXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_shovel"), RUBY_SHOVEL);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_hoe"), RUBY_HOE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_helmet"), RUBY_HELMET);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_chestplate"), RUBY_CHESTPLATE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_leggings"), RUBY_LEGGINGS);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_boots"), RUBY_BOOTS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby"), RUBY);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_sword"), RUBY_SWORD);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_steel_sword"), RUBY_STEEL_SWORD);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_pickaxe"), RUBY_PICKAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_axe"), RUBY_AXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_shovel"), RUBY_SHOVEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_hoe"), RUBY_HOE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_helmet"), RUBY_HELMET);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_chestplate"), RUBY_CHESTPLATE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_leggings"), RUBY_LEGGINGS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_boots"), RUBY_BOOTS);
 
 
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_sword"), AMETHYST_SWORD);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_pickaxe"), AMETHYST_PICKAXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_axe"), AMETHYST_AXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_shovel"), AMETHYST_SHOVEL);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_hoe"), AMETHYST_HOE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_helmet"), AMETHYST_HELMET);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_chestplate"), AMETHYST_CHESTPLATE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_leggings"), AMETHYST_LEGGINGS);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_boots"), AMETHYST_BOOTS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_sword"), AMETHYST_SWORD);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_pickaxe"), AMETHYST_PICKAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_axe"), AMETHYST_AXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_shovel"), AMETHYST_SHOVEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_hoe"), AMETHYST_HOE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_helmet"), AMETHYST_HELMET);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_chestplate"), AMETHYST_CHESTPLATE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_leggings"), AMETHYST_LEGGINGS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_boots"), AMETHYST_BOOTS);
 
 
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_ingot"), STEEL_INGOT);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_sword"), STEEL_SWORD);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_pickaxe"), STEEL_PICKAXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_axe"), STEEL_AXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_shovel"), STEEL_SHOVEL);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_hoe"), STEEL_HOE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_helmet"), STEEL_HELMET);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_chestplate"), STEEL_CHESTPLATE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_leggings"), STEEL_LEGGINGS);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_boots"), STEEL_BOOTS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_ingot"), STEEL_INGOT);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_sword"), STEEL_SWORD);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_pickaxe"), STEEL_PICKAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_axe"), STEEL_AXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_shovel"), STEEL_SHOVEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_hoe"), STEEL_HOE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_helmet"), STEEL_HELMET);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_chestplate"), STEEL_CHESTPLATE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_leggings"), STEEL_LEGGINGS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_boots"), STEEL_BOOTS);
 
 
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_sword"), OBSIDIAN_SWORD);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_pickaxe"), OBSIDIAN_PICKAXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_axe"), OBSIDIAN_AXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_shovel"), OBSIDIAN_SHOVEL);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_hoe"), OBSIDIAN_HOE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_helmet"), OBSIDIAN_HELMET);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_chestplate"), OBSIDIAN_CHESTPLATE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_leggings"), OBSIDIAN_LEGGINGS);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_boots"), OBSIDIAN_BOOTS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_sword"), OBSIDIAN_SWORD);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_pickaxe"), OBSIDIAN_PICKAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_axe"), OBSIDIAN_AXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_shovel"), OBSIDIAN_SHOVEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_hoe"), OBSIDIAN_HOE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_helmet"), OBSIDIAN_HELMET);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_chestplate"), OBSIDIAN_CHESTPLATE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_leggings"), OBSIDIAN_LEGGINGS);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "obsidian_boots"), OBSIDIAN_BOOTS);
 
 
-
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_sword"), COPPER_SWORD);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_pickaxe"), COPPER_PICKAXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_axe"), COPPER_AXE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_shovel"), COPPER_SHOVEL);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_hoe"), COPPER_HOE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_helmet"), COPPER_HELMET);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_chestplate"), COPPER_CHESTPLATE);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_leggings"), COPPER_LEGGINGS);
-		 Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_boots"), COPPER_BOOTS);
-
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_sword"), COPPER_SWORD);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_pickaxe"), COPPER_PICKAXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_axe"), COPPER_AXE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_shovel"), COPPER_SHOVEL);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_hoe"), COPPER_HOE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_helmet"), COPPER_HELMET);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_chestplate"), COPPER_CHESTPLATE);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_leggings"), COPPER_LEGGINGS);
+ 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "copper_boots"), COPPER_BOOTS);
 
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_bow"), EMERALD_BOW);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_bow"), RUBY_BOW);
@@ -252,6 +259,10 @@ public class ItemInit
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "diamond_bow"), DIAMOND_BOW);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "netherite_bow"), NETHERITE_BOW);
 
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_arrow"), EMERALD_ARROW);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_arrow"), RUBY_ARROW);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "amethyst_arrow"), AMETHYST_ARROW);
+		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "diamond_arrow"), DIAMOND_ARROW);
 
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "emerald_excavator"), EMERALD_EXCAVATOR);
 		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_excavator"), RUBY_EXCAVATOR);

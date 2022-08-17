@@ -138,6 +138,15 @@
   "item.emerald_tools.copper_chestplate": "Copper Chestplate",
   "item.emerald_tools.copper_leggings": "Copper Leggings",
   "item.emerald_tools.copper_boots": "Copper Boots",
+
+  "item.emerald_tools.emerald_arrow": "Emerald Arrow",
+  "item.emerald_tools.ruby_arrow": "Ruby Arrow",
+  "item.emerald_tools.amethyst_arrow": "Amethyst Arrow",
+  "item.emerald_tools.diamond_arrow": "Diamond Arrow",
+
+  "item.emerald_tools.arrow.pierce": "Piercing +%s",
+  "item.emerald_tools.arrow.punch": "Punch +%s",
+  "item.emerald_tools.arrow.damage": "Damage +%s",
   
   "itemGroup.emerald_tools.emerald_tools_group" : "Easy Emerald Tools & More"
 }

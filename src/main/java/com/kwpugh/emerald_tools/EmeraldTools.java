@@ -1,10 +1,7 @@
 package com.kwpugh.emerald_tools;
 
 import com.kwpugh.emerald_tools.config.EmeraldToolsConfig;
-import com.kwpugh.emerald_tools.init.BlockInit;
-import com.kwpugh.emerald_tools.init.ItemInit;
-import com.kwpugh.emerald_tools.init.RecipeInit;
-import com.kwpugh.emerald_tools.init.TagInit;
+import com.kwpugh.emerald_tools.init.*;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
@@ -29,5 +26,6 @@ public class EmeraldTools implements ModInitializer
     	ItemInit.registerItems();
         TagInit.registerTags();
         RecipeInit.registerRecipes();
+        EntityInit.registerEntities();
     }
 }

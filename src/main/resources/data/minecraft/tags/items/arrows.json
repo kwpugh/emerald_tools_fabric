@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "emerald_tools:emerald_arrow",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:ruby_arrow",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:amethyst_arrow",
+      "required": false
+    },
+    {
+      "id": "emerald_tools:diamond_arrow",
+      "required": false
+    }
+  ]
+}

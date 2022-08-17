@@ -84,6 +84,25 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
 				+"\n"
 				+"\n"
 				+"******************************"
+				+"\nGem Arrow Settings"
+				+"\n******************************")
+		public float emeraldExtraDamage = 1.0F;
+		public byte emeraldPierceLevel = 1;
+		public int emeraldPunchLevel = 1;
+		public float rubyExtraDamage = 1.5F;
+		public byte rubyPierceLevel = 1;
+		public int rubyPunchLevel = 1;
+		public float amethystExtraDamage = 2.0F;
+		public byte amethystPierceLevel = 1;
+		public int amethystPunchLevel = 1;
+		public float diamondExtraDamage = 2.5F;
+		public byte diamondPierceLevel = 2;
+		public int diamondPunchLevel = 2;
+
+		@Comment("\n"
+				+"\n"
+				+"\n"
+				+"******************************"
 				+"\nNetherite Bow Settings"
 				+"\n******************************")
 		public float projectileSpeedNetherite = 5.0F;

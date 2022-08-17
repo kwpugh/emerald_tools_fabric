@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  g",
+    " s ",
+    "f  "
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "f": {
+      "item": "minecraft:feather"
+    },
+    "g": {
+      "tag": "emerald_tools:ruby"
+    }
+  },
+  "result": {
+    "item": "emerald_tools:ruby_arrow"
+  }
+}
