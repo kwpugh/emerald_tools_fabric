@@ -28,6 +28,11 @@ public class EmeraldArrowEntity extends PersistentProjectileEntity
         super(EntityInit.EMERALD_ARROW, owner, world);
     }
 
+    public EmeraldArrowEntity(World world, double x, double y, double z)
+    {
+        super(EntityInit.EMERALD_ARROW, x, y, z, world);
+    }
+
     public void tick()
     {
         super.tick();

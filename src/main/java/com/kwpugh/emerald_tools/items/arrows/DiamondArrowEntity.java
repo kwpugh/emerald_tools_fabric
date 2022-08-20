@@ -28,6 +28,11 @@ public class DiamondArrowEntity extends PersistentProjectileEntity
         super(EntityInit.DIAMOND_ARROW, owner, world);
     }
 
+    public DiamondArrowEntity(World world, double x, double y, double z)
+    {
+        super(EntityInit.DIAMOND_ARROW, x, y, z, world);
+    }
+
     public void tick()
     {
         super.tick();

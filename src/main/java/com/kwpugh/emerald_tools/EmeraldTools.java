@@ -7,6 +7,8 @@ import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.item.v1.ModifyItemAttributeModifiersCallback;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -27,5 +29,6 @@ public class EmeraldTools implements ModInitializer
         TagInit.registerTags();
         RecipeInit.registerRecipes();
         EntityInit.registerEntities();
+        DispenserBehaviorInit.registerBehaviors();
     }
 }

@@ -28,6 +28,11 @@ public class RubyArrowEntity extends PersistentProjectileEntity
         super(EntityInit.RUBY_ARROW, owner, world);
     }
 
+    public RubyArrowEntity(World world, double x, double y, double z)
+    {
+        super(EntityInit.RUBY_ARROW, x, y, z, world);
+    }
+
     public void tick()
     {
         super.tick();

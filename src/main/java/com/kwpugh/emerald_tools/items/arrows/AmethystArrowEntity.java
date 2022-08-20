@@ -28,6 +28,11 @@ public class AmethystArrowEntity extends PersistentProjectileEntity
         super(EntityInit.AMETHYST_ARROW, owner, world);
     }
 
+    public AmethystArrowEntity(World world, double x, double y, double z)
+    {
+        super(EntityInit.AMETHYST_ARROW, x, y, z, world);
+    }
+
     public void tick()
     {
         super.tick();

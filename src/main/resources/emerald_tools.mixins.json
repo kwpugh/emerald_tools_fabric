@@ -9,7 +9,6 @@
     "ForgingScreenHandlerAccessor"
   ],
   "client": [
-
   ],
   "injectors": {
     "defaultRequire": 1
