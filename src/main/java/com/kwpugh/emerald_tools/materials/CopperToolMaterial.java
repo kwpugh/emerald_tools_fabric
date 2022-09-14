@@ -11,7 +11,7 @@ public class CopperToolMaterial implements ToolMaterial
 	private static int durability = EmeraldTools.CONFIG.GENERAL.copperDurability;
 	private static float miningSpeed = EmeraldTools.CONFIG.GENERAL.copperMiningSpeed;
 	private static float attackDamage = EmeraldTools.CONFIG.GENERAL.copperAttackDamage;
-	private static int miningLevel = EmeraldTools.CONFIG.GENERAL.copperMiningLevel;
+	private static int miningLevel = 2;
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.copperEnchantability;
 	
 	@Override

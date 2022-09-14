@@ -11,7 +11,7 @@ public class AmethystToolMaterial implements ToolMaterial
 	private static int durability = EmeraldTools.CONFIG.GENERAL.amethystDurability;
 	private static float miningSpeed = EmeraldTools.CONFIG.GENERAL.amethystMiningSpeed;
 	private static float attackDamage = EmeraldTools.CONFIG.GENERAL.amethystAttackDamage;
-	private static int miningLevel = EmeraldTools.CONFIG.GENERAL.amethystMiningLevel;
+	private static int miningLevel = 3;
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.amethystEnchantability;
 	
 	@Override

@@ -122,7 +122,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
     	public int amethystDurability = 840;
        	public float amethystMiningSpeed = 8.0F;
        	public float amethystAttackDamage = 1.5F;
-       	public int amethystMiningLevel = 3;
        	public int amethystEnchantability = 25;
        	public boolean amethystEnableSilkTouch = true;
        	public boolean amethystEnableInfinity = true;
@@ -152,7 +151,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
     	public int copperDurability = 250;
        	public float copperMiningSpeed = 5.5F;
        	public float copperAttackDamage = 1.5F;
-       	public int copperMiningLevel = 2;
        	public int copperEnchantability = 18;
 
       	@Comment("\n"
@@ -179,7 +177,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
     	public int emeraldDurability = 725;
        	public float emeraldtMiningSpeed = 8.0F;
        	public float emeraldAttackDamage = 3.0F;
-       	public int emeraldMiningLevel = 3;
        	public int emeraldEnchantability = 10;
 
       	@Comment("\n"
@@ -206,7 +203,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
     	public int rubyDurability = 960;
        	public float rubyMiningSpeed = 8.0F;
        	public float rubyAttackDamage = 3.0F;
-       	public int rubyMiningLevel = 3;
        	public int rubyEnchantability = 10;
        	public boolean rubySpecial = true;
 
@@ -234,7 +230,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
     	public int steelDurability = 512;
        	public float steelMiningSpeed = 7.0F;
        	public float steelAttackDamage = 2.0F;
-       	public int steelMiningLevel = 2;
        	public int steelEnchantability = 9;
 
        	@Comment("\n"
@@ -261,7 +256,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
     	public int obsidianDurability = 650;
        	public float obsidianMiningSpeed = 5.5F;
        	public float obsidianAttackDamage = 1.5F;
-       	public int obsidianMiningLevel = 3;
        	public int obsidianEnchantability = 4;
 
        	@Comment("\n"
@@ -288,7 +282,6 @@ public class EmeraldToolsConfig extends PartitioningSerializer.GlobalData
     	public int rubySteelDurability = 1102;
        	public float rubySteelMiningSpeed = 8.0F;
        	public float rubySteelAttackDamage = 3.0F;
-       	public int rubySteelMiningLevel = 3;
        	public int rubySteelEnchantability = 12;
 	}
 }

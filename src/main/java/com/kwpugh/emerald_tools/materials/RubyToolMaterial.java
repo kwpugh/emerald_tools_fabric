@@ -11,7 +11,7 @@ public class RubyToolMaterial implements ToolMaterial
 	private static int durability = EmeraldTools.CONFIG.GENERAL.rubyDurability;
 	private static float miningSpeed = EmeraldTools.CONFIG.GENERAL.rubyMiningSpeed;
 	private static float attackDamage = EmeraldTools.CONFIG.GENERAL.rubyAttackDamage;
-	private static int miningLevel = EmeraldTools.CONFIG.GENERAL.rubyMiningLevel;
+	private static int miningLevel = 3;
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.rubyEnchantability;
 	
 	@Override

@@ -11,7 +11,7 @@ public class ObsidianToolMaterial implements ToolMaterial
 	private static int durability = EmeraldTools.CONFIG.GENERAL.obsidianDurability;
 	private static float miningSpeed = EmeraldTools.CONFIG.GENERAL.obsidianMiningSpeed;
 	private static float attackDamage = EmeraldTools.CONFIG.GENERAL.obsidianAttackDamage;
-	private static int miningLevel = EmeraldTools.CONFIG.GENERAL.obsidianMiningLevel;
+	private static int miningLevel = 3;
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.obsidianEnchantability;
 	
 	@Override

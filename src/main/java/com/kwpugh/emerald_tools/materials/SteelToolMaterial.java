@@ -11,7 +11,7 @@ public class SteelToolMaterial implements ToolMaterial
 	private static int durability = EmeraldTools.CONFIG.GENERAL.steelDurability;
 	private static float miningSpeed = EmeraldTools.CONFIG.GENERAL.steelMiningSpeed;
 	private static float attackDamage = EmeraldTools.CONFIG.GENERAL.steelAttackDamage;
-	private static int miningLevel = EmeraldTools.CONFIG.GENERAL.steelMiningLevel;
+	private static int miningLevel = 2;
 	private static int enchantability = EmeraldTools.CONFIG.GENERAL.steelEnchantability;
 	
 	@Override
