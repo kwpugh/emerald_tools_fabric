@@ -11,10 +11,10 @@ import net.minecraft.sound.SoundEvents;
 
 public class ObsidianArmorMaterial implements ArmorMaterial
 {
-	private static int durabilityMultiplier = EmeraldTools.CONFIG.GENERAL.obsidianDurabilityMultiplier;
-	private static int enchantability = EmeraldTools.CONFIG.GENERAL.obsidianArmorEnchantability;
-	private static float toughness = EmeraldTools.CONFIG.GENERAL.obsidianToughness;
-	private static float knochback = EmeraldTools.CONFIG.GENERAL.obsidianKnockbackResistance;
+	private static int obsidianDurabilityMultiplier = EmeraldTools.CONFIG.GENERAL.obsidianDurabilityMultiplier;
+	private static int obsidianEnchantability = EmeraldTools.CONFIG.GENERAL.obsidianArmorEnchantability;
+	private static float obsidianToughness = EmeraldTools.CONFIG.GENERAL.obsidianToughness;
+	private static float obsidianKnockback = EmeraldTools.CONFIG.GENERAL.obsidianKnockbackResistance;
 	private static int obsidianHeadProtection = EmeraldTools.CONFIG.GENERAL.obsidianHeadProtection;
 	private static int obsidianChestProtection = EmeraldTools.CONFIG.GENERAL.obsidianChestProtection;
 	private static int obsidianLeggingsProtection = EmeraldTools.CONFIG.GENERAL.obsidianLeggingsProtection;
@@ -26,7 +26,7 @@ public class ObsidianArmorMaterial implements ArmorMaterial
 	@Override
 	public int getDurability(EquipmentSlot slot) 
 	{
-		return BASE_DURABILITY[slot.getEntitySlotId()] * durabilityMultiplier;
+		return BASE_DURABILITY[slot.getEntitySlotId()] * obsidianDurabilityMultiplier;
 	}
 
 	@Override
@@ -38,7 +38,7 @@ public class ObsidianArmorMaterial implements ArmorMaterial
 	@Override
 	public int getEnchantability()
 	{
-		return enchantability;
+		return obsidianEnchantability;
 	}
 
 	@Override
@@ -62,12 +62,12 @@ public class ObsidianArmorMaterial implements ArmorMaterial
 	@Override
 	public float getToughness()
 	{
-		return toughness;
+		return obsidianToughness;
 	}
 
 	@Override
 	public float getKnockbackResistance()
 	{
-		return knochback;
+		return obsidianKnockback;
 	}
 }

@@ -11,10 +11,10 @@ import net.minecraft.sound.SoundEvents;
 
 public class AmethystArmorMaterial implements ArmorMaterial
 {
-	private static int durabilityMultiplier = EmeraldTools.CONFIG.GENERAL.amethystDurabilityMultiplier;
-	private static int enchantability = EmeraldTools.CONFIG.GENERAL.amethystArmorEnchantability;
-	private static float toughness = EmeraldTools.CONFIG.GENERAL.amethystToughness;
-	private static float knochback = EmeraldTools.CONFIG.GENERAL.amethystKnockbackResistance;
+	private static int amethystDurabilityMultiplier = EmeraldTools.CONFIG.GENERAL.amethystDurabilityMultiplier;
+	private static int amethystEnchantability = EmeraldTools.CONFIG.GENERAL.amethystArmorEnchantability;
+	private static float amethystToughness = EmeraldTools.CONFIG.GENERAL.amethystToughness;
+	private static float amethystKnockback = EmeraldTools.CONFIG.GENERAL.amethystKnockbackResistance;
 	private static int amethystHeadProtection = EmeraldTools.CONFIG.GENERAL.amethystHeadProtection;
 	private static int amethystChestProtection = EmeraldTools.CONFIG.GENERAL.amethystChestProtection;
 	private static int amethystLeggingsProtection = EmeraldTools.CONFIG.GENERAL.amethystLeggingsProtection;
@@ -26,7 +26,7 @@ public class AmethystArmorMaterial implements ArmorMaterial
 	@Override
 	public int getDurability(EquipmentSlot slot) 
 	{
-		return BASE_DURABILITY[slot.getEntitySlotId()] * durabilityMultiplier;
+		return BASE_DURABILITY[slot.getEntitySlotId()] * amethystDurabilityMultiplier;
 	}
 
 	@Override
@@ -38,7 +38,7 @@ public class AmethystArmorMaterial implements ArmorMaterial
 	@Override
 	public int getEnchantability()
 	{
-		return enchantability;
+		return amethystEnchantability;
 	}
 
 	@Override
@@ -62,12 +62,12 @@ public class AmethystArmorMaterial implements ArmorMaterial
 	@Override
 	public float getToughness()
 	{
-		return toughness;
+		return amethystToughness;
 	}
 
 	@Override
 	public float getKnockbackResistance()
 	{
-		return knochback;
+		return amethystKnockback;
 	}
 }

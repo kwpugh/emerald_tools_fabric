@@ -1,7 +1,6 @@
 package com.kwpugh.emerald_tools.materials;
 
 import com.kwpugh.emerald_tools.EmeraldTools;
-
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;

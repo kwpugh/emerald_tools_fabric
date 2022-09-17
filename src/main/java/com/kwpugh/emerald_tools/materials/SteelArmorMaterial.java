@@ -2,7 +2,6 @@ package com.kwpugh.emerald_tools.materials;
 
 import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.emerald_tools.init.ItemInit;
-
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -11,10 +10,10 @@ import net.minecraft.sound.SoundEvents;
 
 public class SteelArmorMaterial implements ArmorMaterial
 {
-	private static int durabilityMultiplier = EmeraldTools.CONFIG.GENERAL.steelDurabilityMultiplier;
-	private static int enchantability = EmeraldTools.CONFIG.GENERAL.steelArmorEnchantability;
-	private static float toughness = EmeraldTools.CONFIG.GENERAL.steelToughness;
-	private static float knochback = EmeraldTools.CONFIG.GENERAL.steelKnockbackResistance;
+	private static int steelDurabilityMultiplier = EmeraldTools.CONFIG.GENERAL.steelDurabilityMultiplier;
+	private static int steelEnchantability = EmeraldTools.CONFIG.GENERAL.steelArmorEnchantability;
+	private static float steelToughness = EmeraldTools.CONFIG.GENERAL.steelToughness;
+	private static float steelKnockback = EmeraldTools.CONFIG.GENERAL.steelKnockbackResistance;
 	private static int steelHeadProtection = EmeraldTools.CONFIG.GENERAL.steelHeadProtection;
 	private static int steelChestProtection = EmeraldTools.CONFIG.GENERAL.steelChestProtection;
 	private static int steelLeggingsProtection = EmeraldTools.CONFIG.GENERAL.steelLeggingsProtection;
@@ -26,7 +25,7 @@ public class SteelArmorMaterial implements ArmorMaterial
 	@Override
 	public int getDurability(EquipmentSlot slot) 
 	{
-		return BASE_DURABILITY[slot.getEntitySlotId()] * durabilityMultiplier;
+		return BASE_DURABILITY[slot.getEntitySlotId()] * steelDurabilityMultiplier;
 	}
 
 	@Override
@@ -38,7 +37,7 @@ public class SteelArmorMaterial implements ArmorMaterial
 	@Override
 	public int getEnchantability()
 	{
-		return enchantability;
+		return steelEnchantability;
 	}
 
 	@Override
@@ -62,12 +61,12 @@ public class SteelArmorMaterial implements ArmorMaterial
 	@Override
 	public float getToughness()
 	{
-		return toughness;
+		return steelToughness;
 	}
 
 	@Override
 	public float getKnockbackResistance()
 	{
-		return knochback;
+		return steelKnockback;
 	}
 }

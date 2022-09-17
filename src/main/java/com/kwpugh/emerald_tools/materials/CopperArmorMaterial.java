@@ -11,10 +11,10 @@ import net.minecraft.sound.SoundEvents;
 
 public class CopperArmorMaterial implements ArmorMaterial
 {
-	private static int durabilityMultiplier = EmeraldTools.CONFIG.GENERAL.copperDurabilityMultiplier;
-	private static int enchantability = EmeraldTools.CONFIG.GENERAL.copperArmorEnchantability;
-	private static float toughness = EmeraldTools.CONFIG.GENERAL.copperToughness;
-	private static float knochback = EmeraldTools.CONFIG.GENERAL.copperKnockbackResistance;
+	private static int copperDurabilityMultiplier = EmeraldTools.CONFIG.GENERAL.copperDurabilityMultiplier;
+	private static int copperEnchantability = EmeraldTools.CONFIG.GENERAL.copperArmorEnchantability;
+	private static float copperToughness = EmeraldTools.CONFIG.GENERAL.copperToughness;
+	private static float copperKnockback = EmeraldTools.CONFIG.GENERAL.copperKnockbackResistance;
 	private static int copperHeadProtection = EmeraldTools.CONFIG.GENERAL.copperHeadProtection;
 	private static int copperChestProtection = EmeraldTools.CONFIG.GENERAL.copperChestProtection;
 	private static int copperLeggingsProtection = EmeraldTools.CONFIG.GENERAL.copperLeggingsProtection;
@@ -26,7 +26,7 @@ public class CopperArmorMaterial implements ArmorMaterial
 	@Override
 	public int getDurability(EquipmentSlot slot) 
 	{
-		return BASE_DURABILITY[slot.getEntitySlotId()] * durabilityMultiplier;
+		return BASE_DURABILITY[slot.getEntitySlotId()] * copperDurabilityMultiplier;
 	}
 
 	@Override
@@ -38,7 +38,7 @@ public class CopperArmorMaterial implements ArmorMaterial
 	@Override
 	public int getEnchantability()
 	{
-		return enchantability;
+		return copperEnchantability;
 	}
 
 	@Override
@@ -62,12 +62,12 @@ public class CopperArmorMaterial implements ArmorMaterial
 	@Override
 	public float getToughness()
 	{
-		return toughness;
+		return copperToughness;
 	}
 
 	@Override
 	public float getKnockbackResistance()
 	{
-		return knochback;
+		return copperKnockback;
 	}
 }
