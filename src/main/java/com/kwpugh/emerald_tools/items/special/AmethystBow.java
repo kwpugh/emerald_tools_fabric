@@ -3,6 +3,7 @@ package com.kwpugh.emerald_tools.items.special;
 import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.emerald_tools.items.ModBow;
 
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -22,7 +23,9 @@ public class AmethystBow extends ModBow
     {
         super.onCraft(stack, world, player);
 
-        if(enable)
+        boolean hasInfinity = EnchantmentHelper.getLevel(Enchantments.INFINITY, stack) > 0;
+
+        if(enable & !hasInfinity)
         {
             stack.addEnchantment(Enchantments.INFINITY, 1);
         }

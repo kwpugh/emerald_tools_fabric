@@ -2,6 +2,7 @@ package com.kwpugh.emerald_tools.items.special;
 
 import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.emerald_tools.items.ModPickaxe;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -21,7 +22,10 @@ public class AmethystPickaxe extends ModPickaxe
     public void onCraft(ItemStack stack, World world, PlayerEntity player)
     {
         super.onCraft(stack, world, player);
-        if(enable)
+
+        boolean hasSilkTouch = EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, stack) > 0;
+
+        if(enable && !hasSilkTouch)
         {
             stack.addEnchantment(Enchantments.SILK_TOUCH, 1);
         }
