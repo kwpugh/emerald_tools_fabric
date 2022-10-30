@@ -3,11 +3,11 @@ package com.kwpugh.emerald_tools.recipes;
 import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.emerald_tools.init.ItemInit;
 import com.kwpugh.emerald_tools.init.RecipeInit;
-import com.kwpugh.emerald_tools.init.TagInit;
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.*;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
+import net.minecraft.recipe.book.CraftingRecipeCategory;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
@@ -19,9 +19,9 @@ public class ToolRepair extends SpecialCraftingRecipe
     private final List<Item> repairItemList = new ArrayList<>();
     private int damageAmount;
 
-    public ToolRepair(Identifier identifier)
+    public ToolRepair(Identifier id, CraftingRecipeCategory category)
     {
-        super(identifier);
+        super(id, category);
     }
 
     @Override
