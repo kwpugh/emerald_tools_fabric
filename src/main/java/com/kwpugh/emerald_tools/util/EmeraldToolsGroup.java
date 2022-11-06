@@ -26,7 +26,7 @@ public class EmeraldToolsGroup
         }
 
         @Override
-        protected void addItems(FeatureSet enabledFeatures, Entries entries)
+        protected void addItems(FeatureSet enabledFeatures, Entries entries, boolean hasPermission)
         {
             entries.add(BlockInit.RUBY_BLOCK);
             entries.add(BlockInit.STEEL_BLOCK);
