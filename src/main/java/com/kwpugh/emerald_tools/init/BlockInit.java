@@ -7,6 +7,7 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registries;
 import net.minecraft.util.registry.Registry;
 
 public class BlockInit
@@ -16,13 +17,13 @@ public class BlockInit
 	
 	public static void registerBlocks()
 	{
-		Registry.register(Registry.BLOCK, new Identifier(EmeraldTools.MOD_ID, "ruby_block"), RUBY_BLOCK);
-		Registry.register(Registry.BLOCK, new Identifier(EmeraldTools.MOD_ID, "steel_block"), STEEL_BLOCK);
+		Registry.register(Registries.BLOCK, new Identifier(EmeraldTools.MOD_ID, "ruby_block"), RUBY_BLOCK);
+		Registry.register(Registries.BLOCK, new Identifier(EmeraldTools.MOD_ID, "steel_block"), STEEL_BLOCK);
 	}
 	
 	public static void registerBlockItems()
 	{
-		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_block"), new BlockItem(RUBY_BLOCK, new Item.Settings()));
-		Registry.register(Registry.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_block"), new BlockItem(STEEL_BLOCK, new Item.Settings()));
+		Registry.register(Registries.ITEM, new Identifier(EmeraldTools.MOD_ID, "ruby_block"), new BlockItem(RUBY_BLOCK, new Item.Settings()));
+		Registry.register(Registries.ITEM, new Identifier(EmeraldTools.MOD_ID, "steel_block"), new BlockItem(STEEL_BLOCK, new Item.Settings()));
 	}
 }

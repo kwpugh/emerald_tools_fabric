@@ -10,6 +10,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
+import net.minecraft.util.registry.Registries;
 import net.minecraft.util.registry.Registry;
 
 public class EntityInit
@@ -29,7 +30,7 @@ public class EntityInit
 
     private static <T extends Entity> EntityType<T> register(String s, EntityType<T> entityType)
     {
-        return Registry.register(Registry.ENTITY_TYPE, EmeraldTools.MOD_ID + ":" + s, entityType);
+        return Registry.register(Registries.ENTITY_TYPE, EmeraldTools.MOD_ID + ":" + s, entityType);
     }
 
     private static <T extends Entity> EntityType<T> createArrowEntityType(EntityType.EntityFactory<T> factory)

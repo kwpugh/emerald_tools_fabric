@@ -1,9 +1,10 @@
 package com.kwpugh.emerald_tools.init;
 
 import com.kwpugh.emerald_tools.EmeraldTools;
-import com.kwpugh.emerald_tools.recipes.*;
+import com.kwpugh.emerald_tools.recipes.ToolRepair;
 import net.minecraft.recipe.SpecialRecipeSerializer;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registries;
 import net.minecraft.util.registry.Registry;
 
 public class RecipeInit
@@ -12,6 +13,6 @@ public class RecipeInit
 
     public static void registerRecipes()
     {
-        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(EmeraldTools.MOD_ID, "tool_repair"), TOOL_REPAIR);
+        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(EmeraldTools.MOD_ID, "tool_repair"), TOOL_REPAIR);
     }
 }
