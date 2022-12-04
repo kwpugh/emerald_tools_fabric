@@ -4,22 +4,24 @@ import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.emerald_tools.items.*;
 import com.kwpugh.emerald_tools.items.areatools.ModExcavator;
 import com.kwpugh.emerald_tools.items.areatools.ModHammer;
-import com.kwpugh.emerald_tools.items.areatools.ModHammerCrude;
 import com.kwpugh.emerald_tools.items.areatools.ModTreeAxe;
 import com.kwpugh.emerald_tools.items.arrows.AmethystArrowItem;
 import com.kwpugh.emerald_tools.items.arrows.DiamondArrowItem;
 import com.kwpugh.emerald_tools.items.arrows.EmeraldArrowItem;
 import com.kwpugh.emerald_tools.items.arrows.RubyArrowItem;
-import com.kwpugh.emerald_tools.items.special.*;
+import com.kwpugh.emerald_tools.items.special.AmethystBow;
+import com.kwpugh.emerald_tools.items.special.AmethystHoe;
+import com.kwpugh.emerald_tools.items.special.AmethystPickaxe;
+import com.kwpugh.emerald_tools.items.special.NetheriteBow;
 import com.kwpugh.emerald_tools.materials.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.ToolMaterials;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registries;
-import net.minecraft.util.registry.Registry;
 
 public class ItemInit
 {

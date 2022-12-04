@@ -3,9 +3,9 @@ package com.kwpugh.emerald_tools.init;
 import com.kwpugh.emerald_tools.EmeraldTools;
 import com.kwpugh.emerald_tools.recipes.ToolRepair;
 import net.minecraft.recipe.SpecialRecipeSerializer;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registries;
-import net.minecraft.util.registry.Registry;
 
 public class RecipeInit
 {
